@@ -7,14 +7,21 @@
 		<title>Wanjugu</title>
 		<link rel="shortcut icon" href="../favicon.ico">
 
-        <!--- STYTLESHEETS -->
+        <!--- css -->
 		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,600' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="Main/css/main.css">
-		<link rel="stylesheet" type="text/css" href="Materialize/css/materialize.css" media="screen,projection"/> <!--materialize -->
-        <link rel="stylesheet" type="text/css" href="Materialize/css/materialize.min.css" media="screen,projection"/>
-        <!--opetimized for mobile-->
-         <meta name="viewport" content="width=device-width" initial-scale: 1.0, user-scalable=0>
-        <!---- SCRIPTS ---->
+        <link rel="stylesheet" href="Main/css/global.css.css">
+		<link rel="stylesheet" type="text/css" href="materialize/css/materialize.css" /> <!--materialize -->
+        <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css" />
+<!--        media="screen,projection-->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+        <link rel="stylesheet" href="1-flipping-card-source/css/common.css">
+        <link rel="stylesheet" href="1-flipping-card-source/css/demo.css">
+
+        <!--opitimized for mobile-->
+        <meta name="viewport" content="width=device-width" initial-scale: 1.0, user-scalable=0>
+      <!-- modernizr -->
+      <script src="js/common/modernizr.js"></script>
+            <!---- SCRIPTS ---->
 
         <script src="Main/js/jquery-2.1.4.js"></script>
         <script src="Materialize/js/materialize.js"></script>
@@ -25,40 +32,59 @@
     </head>
 
 <body>
-    <!-- HEADER -->
-    <div id="header">
+    <div class="container">
+<!---------------------------------------------------------->
+        <div id="home-content" class="row">
+             <!---- Photo --->
+            <div>
 
-        <div class="logo">
-            <a href="#">
-                Wan<span>jugu...</span>
-                <span class="top">fascinated by many things; a lover of life.</span>
+                <div class="section-image">
+                    <div class="main-image section__content clearfix">
+                        <div class="card effect__hover">
+                        <!--front-->
+                        <div class="card__front">
+                          <img class="card__text" src="Main/assets/me1.jpg">
+                        </div>
+                        <!--back-->
+                        <div class="card__back">
+                          <img class="card__text" src="Main/assets/me4.jpg">
+                        </div>
+                        </div><!-- /card -->
 
-            </a>
+                        <!---- Logo --->
+                        <div class="logo">
+                            <span> Wanjugu </span>
+                        </div>
+                        <!---- Menu--->
+                        <div class="menu"></div>
+                    </div>
+                </div><!-- /section -->
+
+            </div>
+
+
         </div>
-    </div>
-       <!-- <div class="top">
-            fascinated by many things; a lover of life.
-        </div>-->
 
-
-
-     <!-- REST OF BODY -->
-    <div class ="pic" background="images\l1.jpg"></div>
-
-
-
-    <div id="main">
-"Twenty years from now you will be more disappointed by the things that you didn't do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover." Mark Twain.
     </div>
 
-<p>Life is a one time offer, live it well.</p>
+<!---------------------------------------------------------->
+<!-- Scripts -->
 
-<footer class = "bottom">
-    <a href="TheWebsite.html"> Home</a>
-    <br>
-    <a href="contacts.html">Contact </a>
-    </footer>
+<!-- demo js -->
+<script src="1-flipping-card-source/js/demo/demo.js"></script>
 
   </body>
+<!-- analytics -->
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-34160351-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 
+<!------------------------------------------------>
 </html>

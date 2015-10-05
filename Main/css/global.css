@@ -1,164 +1,53 @@
 
 @import url(https://fonts.googleapis.com/css?family=Slabo+27px|Open+Sans:400,300,300italic,400italic,600,600italic);
 
-*{
-margin:0;
-padding: 0;
-box-sizing:border-box;/*****************************/
-}
+@import url(https://fonts.googleapis.com/css?family=Poiret+One|Indie+Flower|Shadows+Into+Light|Josefin+Sans:400,600,600italic,700,400italic|Architects+Daughter|Kaushan+Script|Rock+Salt|Shadows+Into+Light+Two);
 
-/*defining font to be used in body*/
-body {
+/*
+
+font-family: 'Poiret One', cursive;
+
+font-family: 'Indie Flower', cursive;
+
+font-family: 'Shadows Into Light', cursive;
+
+font-family: 'Josefin Sans', sans-serif;
+
+font-family: 'Architects Daughter', cursive;
+
+font-family: 'Kaushan Script', cursive;
+
+font-family: 'Rock Salt', cursive;
+
+font-family: 'Shadows Into Light Two', cursive;
+
+*/
+
+html, body {
     font-family: 'Open Sans';
-    background-color: azure;
-}
-
-a{
-    text-decoration: none;
-}
-
-div#header {
-    width:100%;
-    height:100px;
-    background-color: #48494A;
-    margin: 0 auto;
-}
-
-/*Creating logo*/
-.logo {
-    float: left;
-    margin-top: 5px;
-    margin-left: 10px;
-}
-
-.logo a {
-    font-size: 1.6em; /*to make is compatible with any browser*/
-    color: #fff;
-}
-
-.logo a span {
-    font-weight: 300;
-}
-
-.top {
-    font-size: 0.7em;
-    margin-left: 130px;
-    margin-top: 15px;
-}
-
-/*Image Background*/
-
-.pic {
-
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    width: 100%;
+    background-color: black;
+    color: white;
     height: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* div sections */
-#main {
-    color:dimgray;
-    max-width: 600px;
-    margin: 50px;
-}
-/* No Break */
-.nobreak {
-    display:inline;
-}
-
-
-/* heading 1 color */
-h1 {
-    margin: 50px auto;
-    font-family: Georgia, serif;
-    font-style: oblique;
-    font-size: 40px;
-    color:cadetblue;
-}
-
-/* link color */
-a {
-    font-family:fantasy;
-    color:cadetblue;
-}
-
-
-/*aligning bottom centre*/
-.bottom {
-    font-size: 20px;
-    position:fixed;
-    bottom:0;
     width: 100%;
-    text-align: center;
 }
 
-
-
-/* animation
-
-@-webkit-keyframes slideInDown {
-  from {
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-    visibility: visible;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+.container {
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 100%;
 }
 
-@keyframes slideInDown {
-  from {
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-    visibility: visible;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+#home-content {
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    position: relative;
+    display:inline-block;
 }
 
-.slideInDown {
-  -webkit-animation-name: slideInDown;
-  animation-name: slideInDown;
+.row .top {
+    height: 30%;
 }
 
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-.fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
-}
-
- */
 
