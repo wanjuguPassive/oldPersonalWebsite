@@ -23,31 +23,5 @@ font-family: 'Shadows Into Light Two', cursive;
 
 */
 
-html, body {
-    font-family: 'Open Sans';
-    background-color: black;
-    color: white;
-    height: 100%;
-    width: 100%;
-}
-
-.container {
-    background-color: black;
-    color: white;
-    height: 100%;
-    width: 100%;
-}
-
-#home-content {
-    width: 80%;
-    height: 100%;
-    margin-left: 10%;
-    position: relative;
-    display:inline-block;
-}
-
-.row .top {
-    height: 30%;
-}
 
 
