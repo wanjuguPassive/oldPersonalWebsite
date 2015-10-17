@@ -23,5 +23,18 @@ font-family: 'Shadows Into Light Two', cursive;
 
 */
 
+/*--------------------------------------------*/
+html, body, div, .container {
+    margin: 0;
+    padding: 0;
+}
+.all_content {
+    width: 100%;
+    height: 100%;
+}
 
+.container{
+
+
+}
 

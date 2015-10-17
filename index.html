@@ -1,101 +1,97 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 	<head>
+
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width" initial-scale: 1.0, user-scalable=0> <!--opitimized for mobile-->
 		<title>Wanjugu</title>
 		<link rel="shortcut icon" href="../favicon.ico">
 
         <!--- css -->
-		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,600' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="Main/css/global.css.css">
-		<link rel="stylesheet" type="text/css" href="materialize/css/materialize.css" /> <!--materialize -->
+        <link rel="stylesheet" href="main/css/global.css">
+        <!--materialize -->
+		<link rel="stylesheet" type="text/css" href="materialize/css/materialize.css" />
         <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css" />
-<!--        media="screen,projection-->
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+        <!-- flipping card -->
         <link rel="stylesheet" href="1-flipping-card-source/css/common.css">
         <link rel="stylesheet" href="1-flipping-card-source/css/demo.css">
 
-        <!--opitimized for mobile-->
-        <meta name="viewport" content="width=device-width" initial-scale: 1.0, user-scalable=0>
       <!-- modernizr -->
-      <script src="js/common/modernizr.js"></script>
+      <script src="1-flipping-card-source/js/common/modernizr.js"></script>
             <!---- SCRIPTS ---->
 
-        <script src="Main/js/jquery-2.1.4.js"></script>
-        <script src="Materialize/js/materialize.js"></script>
-        <script src="Materialize/js/materialize.min.js"></script>
-        <script src="Main/main.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <script src="main/js/jquery-2.1.4.js"></script>
+        <script src="materialize/js/materialize.js"></script>
+        <script src="materialize/js/materialize.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js">           </script>
 
     </head>
 
+<!----------------------------- BODY ----------------------------->
 <body>
+<div class="all_content">
+    <!---------------------------------------------------------->
     <div class="container">
-<!---------------------------------------------------------->
         <div id="home-content" class="row">
-             <!---- Photo --->
-            <div>
 
-                <div class="section-image">
-                    <div class="main-image section__content clearfix">
-                        <div class="card effect__hover">
-                            <!--front-->
-                            <div class="card__front">
-                              <img class="card__text" src="Main/assets/me1.jpg">
-                            </div>
-                            <!--back-->
-                            <div class="card__back">
-                              <img class="card__text" src="Main/assets/me4.jpg">
-                            </div>
-                        </div><!-- /card -->
+            <!--- logo --->
+            <div class="col s6">
 
-                        <!---- Logo --->
-<!--
-                        <div class="logo">
-                            <span> Wanjugu </span>
-                        </div>
--->
-                        <!---- Menu--->
-                        <div class="menu">
-                            <a href="#!" class="btn-large" onclick="Materialize.showStaggeredList('#staggered-test')">Wanjugu</a>
-                            <ul id="staggered-test">
-                                <li style="transform: translateX(0px); opacity: 0">
-                                    <h5><a href="#!">About</a></h5>
-                                </li>
-                                <li style="transform: translateX(0px); opacity: 0">
-                                    <h5>Portfolio</h5>
-                                    <p href="#">wanjugu the dev...</p>
-                                    <p href="#">wanjugu the model...</p>                                                   </li>
-                                <li style="transform: translateX(0px); opacity: 0">
-                                    <h5><a href="#!">Blog</a></h5>
-                                </li>
-                                <li style="transform: translateX(0px); opacity: 0">
-                                    <h5><a href="#!">Contact Me</a></h5>
-                                </li>
-                            </ul>
-
-
-
-                        </div>
-                    </div>
-                </div><!-- /section -->
 
             </div>
+            <!--- logo end --->
 
+            <!---- Photo --->
+            <div class="col s6 section-image">
+                <div class="main-image section__content clearfix">
+                    <!-- card -->
+                    <div class="card effect__random">
+                        <!--front-->
+                        <div class="card__front">
+                          <img class="card__text" src="Main/assets/me1.jpg">
+                        </div>
+                        <!--back-->
+                        <div class="card__back">
+                          <img class="card__text" src="Main/assets/me4.jpg">
+                        </div>
+                    </div><!-- end card -->
+                </div>
+            </div>
+        </div> <!-- end row home-content -->
 
-        </div>
+    </div> <!--- container --->
+</div> <!--- all_content --->
 
-    </div>
+    <!---- Menu
+    <div class="menu">
+        <a href="#!" class="btn-large" onclick="Materialize.showStaggeredList('#staggered-test')">Wanjugu</a>
+        <ul id="staggered-test">
+            <li style="transform: translateX(0px); opacity: 0">
+                <h5><a href="#!">About</a></h5>
+            </li>
+            <li style="transform: translateX(0px); opacity: 0">
+                <h5>Portfolio</h5>
+                <p href="#">wanjugu the dev...</p>
+                <p href="#">wanjugu the model...</p>                                                   </li>
+            <li style="transform: translateX(0px); opacity: 0">
+                <h5><a href="#!">Blog</a></h5>
+            </li>
+            <li style="transform: translateX(0px); opacity: 0">
+                <h5><a href="#!">Contact Me</a></h5>
+            </li>
+        </ul>
 
+    </div> <!-- Menu End -->
+
+</div>
+</body>
 <!---------------------------------------------------------->
 <!-- Scripts -->
 
 <!-- demo js -->
 <script src="1-flipping-card-source/js/demo/demo.js"></script>
 
-  </body>
 <!-- analytics -->
 <script>
 var _gaq = _gaq || [];
