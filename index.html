@@ -15,7 +15,7 @@
         <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css" />
         <!-- flipping card -->
         <link rel="stylesheet" href="1-flipping-card-source/css/common.css">
-        <link rel="stylesheet" href="1-flipping-card-source/css/demo.css">
+        <link rel="stylesheet" href="1-flipping-card-source/css/cards.css">
 
       <!-- modernizr -->
       <script src="1-flipping-card-source/js/common/modernizr.js"></script>
@@ -31,34 +31,41 @@
 <!----------------------------- BODY ----------------------------->
 <body>
 <div class="all_content">
-    <!---------------------------------------------------------->
+
     <div class="container">
-        <div id="home-content" class="row">
-
-            <!--- logo --->
-            <div class="col s6">
-
-
-            </div>
-            <!--- logo end --->
-
-            <!---- Photo --->
-            <div class="col s6 section-image">
-                <div class="main-image section__content clearfix">
+        <!---------------------------------------------------------->
+        <!---- Photo --->
+        <div id="home_content" class="row">
+            <div class="col s3"></div>
+            <div id="flip_photo" class="col s6 section-image center-align ">
+                <div class="main-image section__content clearfix valign-wrapper">
                     <!-- card -->
-                    <div class="card effect__random">
+                    <div class="card effect__random valign">
                         <!--front-->
                         <div class="card__front">
                           <img class="card__text" src="Main/assets/me1.jpg">
                         </div>
                         <!--back-->
                         <div class="card__back">
-                          <img class="card__text" src="Main/assets/me4.jpg">
+                          <img class="card__text" src="Main/assets/me3.jpg">
                         </div>
                     </div><!-- end card -->
                 </div>
             </div>
+            <div class="col s3"></div>
         </div> <!-- end row home-content -->
+
+
+        <!---------------------------------------------------------->
+        <!--- logo --->
+        <div id="logo_content" class="row">
+            <div class="col s4"></div>
+            <div id="logo" class="col s4 btn-large">
+                <a href="#!" class="btn-large">Wanjugu</a>
+            </div>
+            <div class="col s4"></div><!--- logo end --->
+        </div> <!-- end row logo-content -->
+        <!---------------------------------------------------------->
 
     </div> <!--- container --->
 </div> <!--- all_content --->

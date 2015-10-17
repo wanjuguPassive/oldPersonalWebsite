@@ -36,7 +36,7 @@
     var card = cards[i];
     var cardID = card.getAttribute("data-id");
     var id = "timeoutID" + cardID;
-    var time = randomNum( timeMin, timeMax ) * 1000;
+    var time = randomNum( timeMin, timeMax ) * 3000;
     cardsTimeout( id, time, card );
   }
 
@@ -47,7 +47,7 @@
     }
     timeouts[id] = setTimeout( function() {
       var c = card.classList;
-      var newTime = randomNum( timeMin, timeMax ) * 1000;
+      var newTime = randomNum( timeMin, timeMax ) * 3000;
       c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
       cardsTimeout( id, newTime, card );
     }, time );
