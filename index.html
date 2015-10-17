@@ -29,11 +29,13 @@
     </head>
 
 <!----------------------------- BODY ----------------------------->
-<body>
-<div class="all_content">
 
-    <div class="container">
-        <!---------------------------------------------------------->
+<body>
+<div id="home-page" class="all_content">
+    <!----------------------------- PAGE 1 ---------------------------->
+
+    <div id="top" class="container">
+        <!----------------------------->
         <!---- Photo --->
         <div id="home_content" class="row">
             <div class="col s3"></div>
@@ -56,42 +58,51 @@
         </div> <!-- end row home-content -->
 
 
-        <!---------------------------------------------------------->
+        <!------------------------------------>
         <!--- logo --->
         <div id="logo_content" class="row">
             <div class="col s4"></div>
             <div id="logo" class="col s4 btn-large">
-                <a href="#!" class="btn-large">Wanjugu</a>
+                <a href="#about" class="btn-large">Wanjugu</a>
             </div>
             <div class="col s4"></div><!--- logo end --->
         </div> <!-- end row logo-content -->
-        <!---------------------------------------------------------->
+        <!----------------------------------->
 
     </div> <!--- container --->
-</div> <!--- all_content --->
+</div>
 
-    <!---- Menu
-    <div class="menu">
-        <a href="#!" class="btn-large" onclick="Materialize.showStaggeredList('#staggered-test')">Wanjugu</a>
-        <ul id="staggered-test">
-            <li style="transform: translateX(0px); opacity: 0">
-                <h5><a href="#!">About</a></h5>
-            </li>
-            <li style="transform: translateX(0px); opacity: 0">
-                <h5>Portfolio</h5>
-                <p href="#">wanjugu the dev...</p>
-                <p href="#">wanjugu the model...</p>                                                   </li>
-            <li style="transform: translateX(0px); opacity: 0">
-                <h5><a href="#!">Blog</a></h5>
-            </li>
-            <li style="transform: translateX(0px); opacity: 0">
-                <h5><a href="#!">Contact Me</a></h5>
-            </li>
-        </ul>
+ <!------------------------- PAGE 2 ----------------------------------->
+<div id="about" class="all_content">
 
-    </div> <!-- Menu End -->
+    <!----------------------------------->
+    <!---- NavBar----->
+        <div class="nav-top nav-wrapper row valign-wrapper">
+            <div id="nav-logo" class="col s2">
+               <a href="#" class="brand-logo left">Logo</a>
+            </div>
+            <div id="nav-menu" class="col s8 center-align valign">
+                <div id="top"><a href="#home-page">TOP</a></div>
+                <div id="about" class="active"><a href="#about">ABOUT</a></div>
+                <div id="portfolio"><a href="#portfolio">PORTFOLIO</a></div>
+                <div id="contact"><a href="#contact">CONTACT</a></div>
+            </div>
+            <div class="col s2"></div>
+        </div>
+
+    <!----------------------------------->
+    <!-- stuff in container -->
+    <div id="about-content" class="container">
+
+
+    </div><!--end container
+
+
 
 </div>
+
+
+</div> <!--- all_content --->
 </body>
 <!---------------------------------------------------------->
 <!-- Scripts -->

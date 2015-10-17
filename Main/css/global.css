@@ -22,8 +22,8 @@ font-family: 'Rock Salt', cursive;
 font-family: 'Shadows Into Light Two', cursive;
 
 */
-
-/*--------------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Cookie);
+/* font-family: 'Cookie', cursive; */
 
 /* =============================================================================
  The Body
@@ -41,6 +41,10 @@ html, body {
     color: white;
     height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1;
 }
 
 .all_content {
@@ -49,10 +53,23 @@ html, body {
 }
 
 .container {
-    background-color: black;
     color: white;
     height: 100%;
     width: 100%;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+/*____________________________________________________________
+-------------------------------------------------------------- */
+
+/*----------------- Home Page --------------*/
+#top {
+    width: 100%;
+    height: 100%;
+    background-color: black;
 }
 
 #home_content {
@@ -77,8 +94,6 @@ html, body {
 
 }
 
-
-
 /*------------ Logo ------------*/
 #logo {
     height: 100%;
@@ -91,15 +106,13 @@ html, body {
     font-size: 1.3rem;
     background-color: transparent;
     height: 80%;
-
 }
 
 #logo .btn-large:hover {
     color: #26a69a;
 }
 
-
-/*------------ The photo ------------*/
+/*------------ The photo(s) ------------*/
 #flip_photo {
     margin-top:0;
     width: 50%;
@@ -108,7 +121,8 @@ html, body {
 
 }
 .card { /** The photo **/
-  position: absolute;
+  background-color: black;
+/*  position: absolute;*/
   float: left;
   width: 100%;
   height: 100%;
@@ -120,3 +134,71 @@ html, body {
 }
 
 
+/*____________________________________________________________
+-------------------------------------------------------------- */
+
+/*----------------- PAGE 2: ABOUT PAGE --------------*/
+#about {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+/*------- PAGE 2: About NavBar ----------*/
+.nav-top {
+    height: 50px;
+    width: 100%;
+    color: #8c4646;
+    background-color: #588c7e;
+
+    -webkit-filter: opacity (0.7);
+    filter: opacity (0.7);
+}
+
+.nav-top a, .nav-top div a {
+    font-family: 'Cookie', cursive;
+    font-size: 1.2em;
+    margin-top: 9px;
+
+}
+
+#nav-logo, .s2 {
+    width: 20%;
+    height: 100%;
+    padding-left: 7%
+}
+
+#nav-menu {
+    width: 80%;
+    height: 100%;
+}
+
+#nav-menu div {
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+#nav-menu #top { width: 10%; }
+
+#nav-menu #about { width: 14%; }
+
+#nav-menu #portfolio { width: 20%; }
+
+#nav-menu #contact { width: 16%; }
+
+
+#nav-menu div div a {
+    margin-top: 9px;
+}
+
+.active {
+    background-color:
+}
+
+/*------- PAGE 2: About content ----------*/
+#about-content {
+    background-color: white;
+    color: #8c4646;
+
+}

@@ -29,28 +29,6 @@ footer, header, hgroup, menu, nav, section {
 }
 */
 
-html, body {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  line-height: 1;
-  background-color: #000;
-  color: #fff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-}
-
-.container {
-    background-color: black;
-    color: white;
-    height: 100%;
-    width: 100%;
-}
-
-ol, ul {
-  list-style: none;
-}
-
 blockquote, q {
   quotes: none;
 }
@@ -88,6 +66,7 @@ table {
 /* body */
 
 /* text level semantics */
+/*
 a {
   text-decoration: none;
   color: #28aadc;
@@ -96,6 +75,7 @@ a {
 a:hover {
   color: #166888;
 }
+*/
 
 /* =============================================================================
   LAYOUT
