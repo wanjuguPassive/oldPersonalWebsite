@@ -58,11 +58,71 @@ ol, ul {
 
 /*____________________________________________________________
 -------------------------------------------------------------- */
+/*------- NAV-BAR ----------*/
+.nav-top {
+    width: 100%;
+    height: 61px;
+    background-color: black;
+    z-index: 1000;
+    position: fixed;
 
-/*----------------- Home Page --------------*/
-#top.container {
-    width: 80%;
+    -webkit-filter: opacity (0.2);
+    filter: opacity (0.2);
+}
+
+.nav-top a {
+    color: #fff;
+    font-size: .9rem;
+}
+
+/*--- logo - left ---*/
+
+#nav-logo, .s2 {
+    width: 20%;
     height: 100%;
+    padding-left: 7%;
+}
+
+#nav-logo a {
+   margin-top: 23px;
+}
+
+
+/*--- menu - center ---*/
+#nav-menu {
+    width: 100%;
+    height: 100%;
+}
+
+#nav-menu div {
+    background-color: black;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+    padding-top: 23px;
+}
+
+#nav-menu #home { width: 45px; }
+
+#nav-menu #about { width: 60px }
+
+#nav-menu #portfolio { width: 90px; }
+
+#nav-menu #contact { width: 70px; }
+
+a.active {
+    background-color: #588c7e;
+    color: #000;
+    font-weight: bold;
+}
+
+
+/*____________________________________________________________
+-------------------------------------------------------------- */
+/*----------------- Home Page --------------*/
+#home.container {
+    width: 80%;
+    height: 80%;
     background-color: black;
 }
 
@@ -136,77 +196,4 @@ img.card__text {
 {.section__content {
     width:auto;}}
 
-/*____________________________________________________________
--------------------------------------------------------------- */
 
-/*----------------- PAGE 2: ABOUT PAGE --------------*/
-#about {
-    background-color: white;
-    height: 100%;
-    width: 100%;
-}
-
-/*------- PAGE 2: About NavBar ----------*/
-.nav-top {
-    width: 100%;
-    background-color: black;
-
-    -webkit-filter: opacity (0.2);
-    filter: opacity (0.2);
-}
-
-.nav-top a {
-    color: #fff;
-    font-size: .9rem;
-}
-
-/*--- logo - left ---*/
-
-#nav-logo, .s2 {
-    width: 20%;
-    height: 100%;
-    padding-left: 7%;
-}
-
-#nav-logo a {
-   margin-top: 23px;
-}
-
-
-/*--- menu - center ---*/
-#nav-menu {
-    width: 100%;
-    height: 100%;
-}
-
-#nav-menu div {
-    height: 100%;
-    text-align: center;
-    display: inline-block;
-    padding-top: 23px;
-}
-
-#nav-menu #home { width: 45px; }
-
-#nav-menu #about { width: 60px }
-
-#nav-menu #portfolio { width: 90px; }
-
-#nav-menu #contact { width: 70px; }
-
-
-#nav-menu .active {
-    background-color: #588c7e;
-}
-
-#nav-menu .active a {
-    color: #000;
-    font-weight: bold;
-}
-
-/*------- PAGE 2: About content ----------*/
-#about-content {
-    background-color: white;
-    color: #8c4646;
-
-}

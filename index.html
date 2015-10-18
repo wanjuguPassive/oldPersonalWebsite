@@ -31,10 +31,29 @@
 <!----------------------------- BODY ----------------------------->
 
 <body>
+<!----------------------------------->
+<!---- NavBar----->
+<div class="row nav-top valign-wrapper">
+    <div id="nav-logo" class="col s2 hide-on-small-only">
+       <a href="#" class="left">Logo</a>
+    </div>
+    <div id="nav-menu" class="col s8 center-align valign">
+        <div id="home"><a href="#home-page">TOP</a></div>
+        <div id="about"><a href="#about">ABOUT</a></div>
+        <div id="portfolio"><a href="#portfolio">PORTFOLIO</a></div>
+        <div id="contact"><a href="#contact">CONTACT</a></div>
+    </div>
+    <div class="col s2 hide-on-small-only"></div>
+</div>
+
+    <!----------------------------------->
+
+<!------------------------------------------------------------------->
+<!--- HOMEPAGE ---->
 <div id="home-page" class="all_content">
     <!----------------------------- PAGE 1 ---------------------------->
 
-    <div id="top" class="container">
+    <div id="home" class="container active">
         <!----------------------------->
         <!---- Photo --->
         <div id="home_content" class="row">
@@ -72,43 +91,38 @@
     </div> <!--- container --->
 </div>
 
- <!------------------------- PAGE 2 ----------------------------------->
-<div id="about" class="all_content">
-
-    <!----------------------------------->
-    <!---- NavBar----->
-        <div class="row nav-top navbar-fixed valign-wrapper">
-            <div id="nav-logo" class="col s2 hide-on-small-only">
-               <a href="#" class="left">Logo</a>
-            </div>
-            <div id="nav-menu" class="col s8 center-align valign">
-                <div id="home"><a href="#home-page">TOP</a></div>
-                <div id="about" class="active"><a href="#about">ABOUT</a></div>
-                <div id="portfolio"><a href="#portfolio">PORTFOLIO</a></div>
-                <div id="contact"><a href="#contact">CONTACT</a></div>
-            </div>
-            <div class="col s2 hide-on-small-only"></div>
-        </div>
-
-    <!----------------------------------->
-    <!-- stuff in container -->
-    <div id="about-content" class="container">
-
-
-    </div><!--end container
 
 
 
-</div>
-
-
-</div> <!--- all_content --->
-</body>
 <!---------------------------------------------------------->
 <!-- Scripts -->
 
 <!-- demo js -->
 <script src="1-flipping-card-source/js/demo/demo.js"></script>
+
+<!-- change active on scroll -->
+<script>
+    var sections = $('div')
+      , nav = $('nav-menu')
+      , nav_height = nav.outerHeight();
+
+    $(window).on('scroll', function () {
+      var cur_pos = $(this).scrollTop();
+
+      sections.each(function() {
+        var top = $(this).offset().top - nav_height,
+            bottom = top + $(this).outerHeight();
+
+        if (cur_pos >= top && cur_pos <= bottom) {
+          nav.find('a').removeClass('active');
+          sections.removeClass('active');
+
+          $(this).addClass('active');
+          nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+        }
+      });
+    });
+</script>
 
 <!-- analytics -->
 <script>
