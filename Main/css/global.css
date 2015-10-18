@@ -197,3 +197,56 @@ img.card__text {
     width:auto;}}
 
 
+/*____________________________________________________________
+-------------------------------------------------------------- */
+
+/*----------------- PAGE 2: ABOUT PAGE --------------*/
+#about {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+/*------- PAGE 2: About content ----------*/
+#about-content {
+    position: relative;
+    background-color: white;
+    color: #8c4646;
+    height: 100%;
+}
+
+#top-row, #mid-row, #bottom-row {
+    position: absolute;
+    border-style:solid;
+    border-color: black;
+    border-width: thin;
+    width: 100%;
+}
+
+.s2, .s4, .s6, .s8 {
+    border-style:solid;
+    border-color: black;
+    border-width: thin;
+    height: 100%
+
+}
+
+#top-row {
+    height: 20%;
+    top: 10%;
+}
+
+#mid-row {
+    height: 50%;
+    top: 30%;
+}
+
+#bottom-row {
+    height: 10%;
+    top: 80%;
+}
+
+#top-row .s4 {
+
+
+}
