@@ -52,12 +52,6 @@ html, body {
     height: 100%;
 }
 
-.container {
-    color: white;
-    height: 100%;
-    width: 100%;
-}
-
 ol, ul {
   list-style: none;
 }
@@ -66,73 +60,81 @@ ol, ul {
 -------------------------------------------------------------- */
 
 /*----------------- Home Page --------------*/
-#top {
-    width: 100%;
+#top.container {
+    width: 80%;
     height: 100%;
     background-color: black;
 }
 
+
+/*------------ The photo(s) ------------*/
 #home_content {
-    width: 80%;
+    width: 100%;
     height: 60%;
-    margin-left: 10%;
     margin-top: 10%;
     position: relative;
     display:inline-block;
 }
-
-#logo_content {
-    width: 80%;
-    height: 20%;
-    margin-left: 10%;
-    position: relative;
-    display:inline-block;
+.s2 {
 }
 
-.s3, .s4 {
-    height:  100%;
-
-}
-
-/*------------ Logo ------------*/
-#logo {
-    height: 100%;
-    position: relative;
-    background-color: transparent;
-}
-
-#logo .btn-large {
-    font-family: 'Rock Salt', cursive;
-    font-size: 1.3rem;
-    background-color: transparent;
-    height: 80%;
-}
-
-#logo .btn-large:hover {
-    color: #26a69a;
-}
-
-/*------------ The photo(s) ------------*/
-#flip_photo {
+.s8{
     margin-top:0;
-    width: 50%;
     height: 100%;
     text-align: center;
 
 }
-.card { /** The photo **/
-  background-color: black;
-/*  position: absolute;*/
-  float: left;
-  width: 100%;
-  height: 100%;
 
-}
 .section__content {
-    width: 100%;
+    width: auto;
     height: 100%;
 }
 
+.card { /** The photo **/
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.card__front, .card__back {
+    position: relative;
+}
+
+img.card__text {
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+}
+
+/*------------ Logo ------------*/
+
+#logo_content {
+    width: 100%;
+    height: 10%;
+    position: relative;
+    display:inline-block;
+}
+
+#logo {
+    height: 100%;
+    background-color: transparent;
+}
+
+#logo .btn {
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+#logo .btn:hover {
+    color: #588c7e;
+}
+
+
+
+@media only screen and (max-width : 600px)
+{.section__content {
+    width:auto;}}
 
 /*____________________________________________________________
 -------------------------------------------------------------- */
@@ -146,30 +148,34 @@ ol, ul {
 
 /*------- PAGE 2: About NavBar ----------*/
 .nav-top {
-    height: 50px;
     width: 100%;
-    color: #8c4646;
-    background-color: #588c7e;
+    background-color: black;
 
-    -webkit-filter: opacity (0.7);
-    filter: opacity (0.7);
+    -webkit-filter: opacity (0.2);
+    filter: opacity (0.2);
 }
 
-.nav-top a, .nav-top div a {
-    font-family: 'Cookie', cursive;
-    font-size: 1.2em;
-    margin-top: 9px;
-
+.nav-top a {
+    color: #fff;
+    font-size: .9rem;
 }
+
+/*--- logo - left ---*/
 
 #nav-logo, .s2 {
     width: 20%;
     height: 100%;
-    padding-left: 7%
+    padding-left: 7%;
 }
 
+#nav-logo a {
+   margin-top: 23px;
+}
+
+
+/*--- menu - center ---*/
 #nav-menu {
-    width: 80%;
+    width: 100%;
     height: 100%;
 }
 
@@ -177,23 +183,25 @@ ol, ul {
     height: 100%;
     text-align: center;
     display: inline-block;
+    padding-top: 23px;
 }
 
-#nav-menu #top { width: 10%; }
+#nav-menu #home { width: 45px; }
 
-#nav-menu #about { width: 14%; }
+#nav-menu #about { width: 60px }
 
-#nav-menu #portfolio { width: 20%; }
+#nav-menu #portfolio { width: 90px; }
 
-#nav-menu #contact { width: 16%; }
+#nav-menu #contact { width: 70px; }
 
 
-#nav-menu div div a {
-    margin-top: 9px;
+#nav-menu .active {
+    background-color: #588c7e;
 }
 
-.active {
-    background-color:
+#nav-menu .active a {
+    color: #000;
+    font-weight: bold;
 }
 
 /*------- PAGE 2: About content ----------*/
