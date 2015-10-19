@@ -130,8 +130,8 @@ a.active {
 /*------------ The photo(s) ------------*/
 #home_content {
     width: 100%;
-    height: 60%;
-    margin-top: 10%;
+    height: 80%;
+    margin-top: 120px;
     position: relative;
     display:inline-block;
 }
@@ -201,7 +201,7 @@ img.card__text {
 -------------------------------------------------------------- */
 
 /*----------------- PAGE 2: ABOUT PAGE --------------*/
-#about {
+#about-page {
     background-color: white;
     height: 100%;
     width: 100%;
@@ -223,30 +223,46 @@ img.card__text {
     width: 100%;
 }
 
-.s2, .s4, .s6, .s8 {
+.s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8 {
     border-style:solid;
     border-color: black;
     border-width: thin;
-    height: 100%
-
+    height: 100%;
 }
 
 #top-row {
     height: 20%;
-    top: 10%;
+    top: 15%;
 }
 
 #mid-row {
     height: 50%;
-    top: 30%;
+    top: 35%;
 }
 
 #bottom-row {
     height: 10%;
-    top: 80%;
+    top: 85%;
 }
 
 #top-row .s4 {
+    height: 354%;
+    position: relative;
+    overflow: hidden;
+    z-index: 100;
+}
 
+#top-row .s4 img {
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    position: absolute;
+}
+
+#top-row .s1 {
+
+}
+
+#top-row .s7 {
 
 }
