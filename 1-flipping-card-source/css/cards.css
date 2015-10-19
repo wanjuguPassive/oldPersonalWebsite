@@ -36,7 +36,7 @@ font-family: 'Shadows Into Light Two', cursive;
 
 
 .card:nth-child(1) {
-  margin-left: -3px;
+  margin-left: px;
   margin-right: 1px;
 }
 
@@ -59,8 +59,8 @@ font-family: 'Shadows Into Light Two', cursive;
 .card__back {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 2s;
-          transition: transform 2s;
+  -webkit-transition: -webkit-transform 3s;
+          transition: transform 3s;
 }
 
 .card__front {

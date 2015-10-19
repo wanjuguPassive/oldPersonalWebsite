@@ -165,7 +165,7 @@ ol, ul {
   background-color: black;
   width: 100%;
   height: 100%;
-    border
+
 }
 
 .card__front, .card__back {
@@ -378,6 +378,40 @@ img.card__text {
     border-right: thin solid black;
     border-left: thin solid black;
     border-bottom: thin solid black;
+}
+
+.section__content {
+width: 100%;
+}
+
+.section__content .one {
+    left: 0;
+}
+
+.section__content .two {
+    left: 66.6%;
+}
+
+.section__content .three {
+    left: 33.3%
+}
+
+.section__content .one, .section__content .two, .section__content .three{
+    width: 33.3%;
+    height: 99.5%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    position: absolute;
+
+}
+
+div.card .card__front {
+
+}
+.card__back {}
+
+h1.card__text {
+    font-size: 3rem;
 }
 
 
