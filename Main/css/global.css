@@ -56,6 +56,13 @@ ol, ul {
   list-style: none;
 }
 
+.container {
+    border-right-color: #588c7e;
+    border-right-style: solid;
+    border-right-width: thin;
+
+}
+
 /*____________________________________________________________
 -------------------------------------------------------------- */
 /*------- NAV-BAR ----------*/
@@ -110,7 +117,7 @@ ol, ul {
 
 #nav-menu #contact { width: 70px; }
 
-a.active {
+#nav-menu.active {
     background-color: #588c7e;
     color: #000;
     font-weight: bold;
@@ -120,9 +127,13 @@ a.active {
 /*____________________________________________________________
 -------------------------------------------------------------- */
 /*----------------- Home Page --------------*/
-#home.container {
-    width: 80%;
-    height: 80%;
+
+#home-page {
+
+}
+
+#home {
+    height: 100%;
     background-color: black;
 }
 
@@ -130,7 +141,7 @@ a.active {
 /*------------ The photo(s) ------------*/
 #home_content {
     width: 100%;
-    height: 80%;
+    height: 60%;
     margin-top: 120px;
     position: relative;
     display:inline-block;
@@ -217,27 +228,43 @@ img.card__text {
 
 #top-row, #mid-row, #bottom-row {
     position: absolute;
-    border-style:solid;
-    border-color: black;
-    border-width: thin;
+
     width: 100%;
 }
 
 .s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8 {
-    border-style:solid;
-    border-color: black;
-    border-width: thin;
     height: 100%;
+}
+
+/*
+ .s2, .s3, .s4, .s5, .s6, .s7 {
+    border: width, style color
+    border-top: thin solid black;
+    border-right: thin solid black;
+    border-left: thin solid black;
+    border-bottom: thin solid black;
+}
+*/
+
+#mid-row .s6 {
+ border-top: thin solid #588c7e;
+}
+
+#mid-row .s6, #bottom-row .s6 {
+    border-right: thin solid #588c7e;
+}
+
+#bottom-row .s6 {
+     border-bottom: thin solid #588c7e;
+}
+
+#bottom-row .s6, #mid-row .s6 {
+    border-left: thin solid #588c7e;
 }
 
 #top-row {
     height: 20%;
     top: 15%;
-}
-
-#mid-row {
-    height: 50%;
-    top: 35%;
 }
 
 #bottom-row {
@@ -259,10 +286,28 @@ img.card__text {
     position: absolute;
 }
 
-#top-row .s1 {
+
+/*--- Content ----*/
+#mid-row {
+    height: 50%;
+    top: 35%;
+}
+
+#mid-row .s6 {
+    padding-top: 10%;
+    text-align: center;
+}
+
+#mid-row .s6 h3 {
+    font-size: 2.2rem;
 
 }
 
-#top-row .s7 {
+#mid-row .s6 h3 span {
+    font-size: 1.2rem;
 
+}
+
+#mid-row .s6 p {
+    font-size: 1.2rem;
 }
