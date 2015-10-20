@@ -251,7 +251,7 @@
 
     <!-- content -->
     <div id="contacts-content" class="container">
-
+    <div id="small-container">
         <!--- title --->
         <div id="talk-to-me" class="row">
             <div class="col s12">
@@ -263,11 +263,11 @@
 
         <!----- Form ----->
         <div id="contacts-form" class="row">
-            <form class="col s12">
+        <form class="col s12">
 
                 <!-- first row --->
-            <div class="row">
-                <div class="col s3 hide-on-small-only"></div>
+            <div id="form-row1" class="row">
+                <div class="col s3"></div>
                 <!--- first name --->
                 <div class="input-field col s3">
                     <input placeholder="Placeholder" id="first_name" type="text" class="validate">
@@ -279,7 +279,7 @@
                       <input id="last_name" type="text" class="validate">
                       <label for="last_name">Last Name</label>
                 </div>
-                <div class="col s3 hide-on-small-only"></div>
+                <div class="col s3"></div>
               </div>
 
                 <!-- second row --->
@@ -302,12 +302,12 @@
               <div class="row">
                 <div class="input-field col s12">
                   <input id="email" type="email" class="validate">
-                  <label for="email">Email</label>
+                  <label for="email" data-error="wrong" data-success="right">Email</label>
                 </div>
               </div>
-            </form>
+        </form>
         </div>
-
+    </div> <!--- small container --->
     </div> <!--contacts-content end --->
 
 </div><!--contacts-page end --->

@@ -77,6 +77,8 @@ p {
     font-size: 1.2rem;
 }
 
+
+
 /*____________________________________________________________
 -------------------------------------------------------------- */
 /*------- NAV-BAR ----------*/
@@ -437,22 +439,53 @@ img.card__text {
 
 #contacts-page {
     background-color: white;
-
 }
 
 #contacts-content {
     color: #8c4646;
-
-
 }
 
+#small-container {
+    height: 100%;
+    width: 700px;
+    left: 50%;
+}
+
+
 #talk-to-me {
-    top: 100px;;
+    top: 100px;
+    width: 80%;
     position: relative;
     text-align: center;
     border: thin solid #8c4646;
     color: black;
+
 }
+
+.center-h {
+    left: 50%;
+    transform: translate(-50%, 0%);
+     position: absolute;
+}
+
+.center-v {
+    top: 50%;
+    transform: translate(0%, -50%);
+     position: absolute;
+}
+
+.center-c {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     position: absolute;
+}
+
+#contacts-form {
+
+}
+
+
 
 form {
     top: 120px;
@@ -460,7 +493,7 @@ form {
     color: black;
 }
 
-.input-field.s3 {
+.s3 {
     height: 100%;
 
 }
