@@ -64,6 +64,18 @@ ol, ul {
 
 }
 
+h3 {
+    font-size: 2.2rem;
+}
+
+h3 span {
+    font-size: 1.9rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
 /*____________________________________________________________
 -------------------------------------------------------------- */
 /*------- NAV-BAR ----------*/
@@ -86,9 +98,7 @@ ol, ul {
 /*--- logo - left ---*/
 
 #nav-logo, .s2 {
-    width: 20%;
-    height: 100%;
-    padding-left: 7%;
+    text-align: center;
 }
 
 #nav-logo a {
@@ -153,11 +163,9 @@ ol, ul {
     margin-top:0;
     height: 100%;
     text-align: center;
-
 }
 
 .section__content {
-    width: auto;
     height: 100%;
 }
 
@@ -189,26 +197,13 @@ img.card__text {
 }
 
 #logo {
-    height: 100%;
+    height: 70px;
     background-color: transparent;
 }
 
-#logo .btn {
-    font-size: 1.4rem;
-    font-weight: bold;
-    background-color: transparent;
-}
-
-#logo .btn:hover {
+#logo a:hover {
     color: #588c7e;
 }
-
-
-
-@media only screen and (max-width : 600px)
-{.section__content {
-    width:auto;}}
-
 
 /*____________________________________________________________
 -------------------------------------------------------------- */
@@ -237,16 +232,6 @@ img.card__text {
 .s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8 {
     height: 100%;
 }
-
-/*
- .s2, .s3, .s4, .s5, .s6, .s7 {
-    border: width, style color
-    border-top: thin solid black;
-    border-right: thin solid black;
-    border-left: thin solid black;
-    border-bottom: thin solid black;
-}
-*/
 
 #mid-row .s6 {
  border-top: thin solid #588c7e;
@@ -300,28 +285,19 @@ img.card__text {
     text-align: center;
 }
 
-#mid-row .s6 h3 {
-    font-size: 2.2rem;
+
+#aboutme {
+    text-align: center;
+    border: thin solid #8c4646;
 
 }
-
-#mid-row .s6 h3 span {
-    font-size: 1.2rem;
-
-}
-
-#mid-row .s6 p {
-    font-size: 1.2rem;
-}
-
-
 /*____________________________________________________________
 -------------------------------------------------------------- */
 
 /*----------------- PAGE 3: PORTFOLIO --------------*/
 
-#portfolio {
-    background-color: white;
+#portfolio-page {
+    background-color: #588c7e;
     height: 100%;
     width: 100%;
 }
@@ -340,38 +316,16 @@ img.card__text {
 }
 */
 
-/*------- About content ----------*/
-#portfolio {
-   background-color:  #588c7e;
-
-}
+/*------- A content ----------*/
 
 #portfolio-content {
-    position: relative;
     background-color: #588c7e;
     color: #8c4646;
     height: 100%;
-    border-right-color: black;
+    border-right-color: #8c4646;
 }
 
-
-#ptop-row, #pbottom-row {
-    position: absolute;
-    width: 100%;
-    left: 12px;
-}
-
-#ptop-row {
-    height: 30%;
-    top: 20%
-}
-
-#pbottom-row {
-    height: 30%;
-    top: 50%;
-}
-
-#portfolio-content .s4 {
+#portfolio-content .s3 {
     height: 100%;
 /*    border: width, style color;*/
     border-top: thin solid black;
@@ -380,39 +334,47 @@ img.card__text {
     border-bottom: thin solid black;
 }
 
-.section__content {
-width: 100%;
+#ptop-row, #myworks {
+    position: relative;
+    width: 100%;
+    left: 12px;
 }
 
-.section__content .one {
-    left: 0;
+#myworks {
+    top: 15%;
+    text-align: center;
+    border: thin solid white;
+    color: black;
 }
 
-.section__content .two {
-    left: 66.6%;
+#ptop-row {
+    height: 270px;
+    top: 20%;
+    position: relative;
 }
 
-.section__content .three {
-    left: 33.3%
+
+#ptop-row .s3 {
+    width: 25%;
+    display: inline-block;
+
+}
+.section-image {
+    height: 100%;
 }
 
-.section__content .one, .section__content .two, .section__content .three{
-    width: 33.3%;
-    height: 99.5%;
-    top: 50%;
-    transform: translate(0%, -50%);
+.card__front a, .card__back a {
+    color: white;
+    font-size: 3.5rem;
+/*    font-weight: bold;*/
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0%);
     position: absolute;
-
 }
 
-div.card .card__front {
 
-}
-.card__back {}
 
-h1.card__text {
-    font-size: 3rem;
-}
 
 
 
