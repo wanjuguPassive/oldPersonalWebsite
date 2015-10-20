@@ -41,7 +41,7 @@
         <div id="home"><a href="#home-page">TOP</a></div>
         <div id="about"><a href="#about-page">ABOUT</a></div>
         <div id="portfolio"><a href="#portfolio-page">PORTFOLIO</a></div>
-        <div id="contact"><a href="#contact">CONTACT</a></div>
+        <div id="contact"><a href="#contacts-page">CONTACT</a></div>
     </div>
     <div class="col s2 hide-on-small-only"></div>
 </div>
@@ -57,10 +57,10 @@
         <!----------------------------->
         <!---- Photo --->
         <div id="home_content" class="row">
-            <div class="col s4 "></div>
-            <div class="col s4">
+            <div class="col s4 hide-on-med-and-down"></div>
+            <div class="col s4 middle-div">
                 <div id="flip_photo" class="section-image center-align ">
-                    <div class="main-image section__content clearfix valign-wrapper">
+                    <div class="main-image section__content clearfix">
                         <!-- card -->
                         <div class="card effect__random">
                             <!--front-->
@@ -74,8 +74,8 @@
                         </div><!-- end card -->
                     </div>
                 </div>
-                </div>
-            <div class="col s4"></div>
+            </div>
+            <div class="col s4 hide-on-med-and-down"></div>
         </div> <!-- end row home-content -->
 
 
@@ -144,7 +144,7 @@
 
     <!-- content -->
     <div id="portfolio-content" class="container">
-
+        <!--- title --->
         <div id="myworks" class="row">
             <div class="col s12">
                 <h3>
@@ -153,6 +153,7 @@
             </div>
         </div>
 
+        <!--- grid --->
         <div id="ptop-row" class="row">
             <div class="col s3"></div>
 
@@ -196,11 +197,104 @@
 
         </div>
 
+        <div id="pbottom-row" class="row">
+            <div class="col s3">
+                <div id="flip_photo" class="section-image center-align ">
+                    <div class="main-image section__content clearfix valign-wrapper">
+                        <!-- card -->
+                        <div class="card effect__random">
+                            <!--front-->
+                            <div class="card__front">
+                                <a href="#"> w </a>
+                            </div>
+                            <!--back-->
+                            <div class="card__back">
+                                <a href="#"> a </a>
+                            </div>
+                        </div><!-- end card -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s3"></div>
+
+            <div class="col s3">
+                <div id="flip_photo" class="section-image center-align ">
+                    <div class="main-image section__content clearfix valign-wrapper">
+                        <!-- card -->
+                        <div class="card effect__random">
+                            <!--front-->
+                            <div class="card__front">
+                                <a href="#"> w </a>
+                            </div>
+                            <!--back-->
+                            <div class="card__back">
+                                <a href="#"> a </a>
+                            </div>
+                        </div><!-- end card -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s3"></div>
+        </div>
+
     </div><!--portfolio-content -->
 
 </div>
 
 </body>
+<!---------------------------------------------------------->
+    <!----- CONTACTS ------>
+
+<div id="contacts-page" class="all_content">
+    <div class="triangle"></div>
+
+    <!-- content -->
+    <div id="contacts-content" class="container">
+    <!--- title --->
+        <div id="talk-to-me" class="row">
+            <div class="col s12">
+                <h3>
+                    <span>t</span>alk to me
+                </h3>
+            </div>
+        </div>
+
+
+    <!----- Form ----->
+    <div id="contacts-form" class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+          <label for="disabled">Disabled</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+    </form>
+  </div>
 
 
 <!---------------------------------------------------------->
