@@ -180,28 +180,21 @@ p {
     display:inline-block;
 }
 
-.section-image {
-    height: 100%;
+#home_content .s6 {
+
+}
+
+
+#one {
     width: 340px;
-}
-
-.section__content {
     height: 100%;
+    overflow: hidden;
+    margin-right: auto;
+    background-color: #000;
 }
 
-.card { /** The photo **/
-  background-color: black;
-  width: 100%;
-  height: 100%;
-
-}
-
-.card__front, .card__back {
-    position: relative;
-}
-
-img.card__text {
-    left: 0%;
+#one img {
+    max-height:100%;
 }
 
 /*------------ Logo ------------*/
@@ -418,6 +411,30 @@ img.card__text {
 
 }
 
+/*-- photos ---*/
+.section-image {
+    height: 100%;
+    width: 340px;
+}
+
+.section__content {
+    height: 100%;
+}
+
+.card { /** The photo **/
+  background-color: black;
+  width: 100%;
+  height: 100%;
+
+}
+
+.card__front, .card__back {
+    position: relative;
+}
+
+img.card__text {
+    left: 0%;
+}
 .card__front a, .card__back a {
     color: white;
     font-size: 3.5rem;

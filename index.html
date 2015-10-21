@@ -56,21 +56,10 @@
         <!---- Photo --->
         <div id="home_content" class="row">
             <div class="col s3 hide-on-small-only"></div>
-            <div class="col s6 photo">
-                <div id="flip_photo" class="section-image center-h">
-                    <div class="main-image section__content clearfix">
-                        <!-- card -->
-                        <div class="card effect__random">
-                            <!--front-->
-                            <div class="card__front">
-                              <img class="card__text" src="Main/assets/me1.jpg">
-                            </div>
-                            <!--back-->
-                            <div class="card__back">
-                              <img class="card__text" src="Main/assets/me3.jpg">
-                            </div>
-                        </div><!-- end card -->
-                    </div>
+            <div class="col s6">
+                <div id="one" class="fadein">
+                    <img src="main/assets/me1.jpg" class="center-c" alt="">
+                    <img src="main/assets/me3.jpg" class="center-c" alt="">
                 </div>
             </div>
             <div class="col s3 hide-on-small-only"></div>
@@ -319,8 +308,8 @@
 
                 $('.fadein img:gt(0)').hide();
                 setInterval(function(){
-                $('.fadein :first-child').fadeOut(2000)
-                .next('img').fadeIn(2000)
+                $('.fadein :first-child').fadeOut(5000)
+                .next('img').fadeIn(5000)
                 .end().appendTo('.fadein');},
                 7000);
 
