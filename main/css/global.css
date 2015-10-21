@@ -466,26 +466,32 @@ img.card__text {
 
 #talk-to-me {
     top: 100px;
-    width: 80%;
+    width: 100%;
+    left: 12px;
     position: relative;
     text-align: center;
     border: thin solid #8c4646;
     color: black;
-
 }
-
 
 form {
     top: 120px;
+    height: 400px;
     position: relative;
+    border: thin solid #8c4646;
     color: black;
 }
 
-#form-row1 {
-    height: 70px
+#form-names, #form-email {
+    height: 70px;
+    padding-top: 50px;
 }
 
 .s3 {
     height: 100%;
 
+}
+
+#form-feedback {
+    height: 250px;
 }
