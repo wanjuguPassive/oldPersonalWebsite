@@ -51,7 +51,7 @@ ol, ul {
   list-style: none;
 }
 
-#home-page, #about-page, #porfolio-page, #contacts-page {
+#home-page, #about-page, #portfolio-page, #contacts-page {
     height: 100%;
     min-height: 800px;
     width: 100%;
@@ -359,6 +359,7 @@ p {
 /*----------------- PAGE 3: PORTFOLIO --------------*/
 
 #portfolio-page {
+    top: -10%;
     background-color: #588c7e;
 }
 
@@ -389,6 +390,7 @@ p {
 }
 
 #myworks {
+    top: 10%;
     margin-top: 100px;
     text-align: center;
     border: thin solid white;
@@ -396,25 +398,23 @@ p {
 }
 
 #ptop-row, #pbottom-row {
-    height: 40%;
-/*    position: relative;*/
+    height: 35%;
 }
 
-#ptop-row {margin-top: 10px;}
+#ptop-row {top: 12%;}
 
-#pbottom-row {margin-top: 0}
+#pbottom-row {top: 2%}
 
 
 #ptop-row .s3, #pbottom-row .s3 {
     width: 25%;
     display: inline-block;
-
 }
 
 /*-- photos ---*/
 .section-image {
     height: 100%;
-    width: 340px;
+    width: 270px;
 }
 
 .section__content {
