@@ -401,9 +401,9 @@ p {
     height: 35%;
 }
 
-#ptop-row {top: 12%;}
+#ptop-row {top: 10%;}
 
-#pbottom-row {top: 2%}
+#pbottom-row {top: 10%}
 
 
 #ptop-row .s3, #pbottom-row .s3 {
@@ -419,6 +419,7 @@ p {
 
 .section__content {
     height: 100%;
+    width: 270px;
 }
 
 .card { /** The photo **/
@@ -451,15 +452,17 @@ img.card__text {
 
 #contacts-page {
     background-color: white;
+    min-height: 100%;
 }
 
 #contacts-content {
     color: #8c4646;
+    height: 70%;
 }
 
 #small-container {
     height: 100%;
-    width: 700px;
+    width: 70%;
     left: 50%;
 }
 
@@ -476,15 +479,15 @@ img.card__text {
 
 form {
     top: 120px;
-    height: 400px;
+    height: 310px;
     position: relative;
     border: thin solid #8c4646;
     color: black;
 }
 
 #form-names, #form-email {
-    height: 70px;
-    padding-top: 50px;
+    height: 40px;
+
 }
 
 .s3 {
@@ -493,5 +496,34 @@ form {
 }
 
 #form-feedback {
-    height: 250px;
+    height: 70px;
 }
+#form-submit {
+    text-align: center;
+    height: 50px;
+}
+
+/*____________________________________________________________*/
+/*---Footer ---*/
+#footer {
+    bottom: 0;
+    margin-bottom: 0;
+    z-index: ;
+    position:relative;
+    height: 30%;
+    width: 100%;
+    background-color: #8c4646;
+    font-size: .9rem;
+    color: white;
+    text-align: center;
+
+}
+
+#social, #contacts {
+    height: 200px;
+}
+
+#copyright {
+    height: 50px;
+}
+
