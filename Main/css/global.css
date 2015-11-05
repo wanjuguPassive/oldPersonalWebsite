@@ -219,6 +219,7 @@ p {
     left: 50%;
     transform: translate(-50%, 0%);
     position: absolute;
+    color: #fff;
 }
 
 #logo a:hover {
@@ -340,13 +341,17 @@ p {
 
 #mid-row .s6 {
     padding-top: 10%;
-    text-align: center;
 }
-
 
 #aboutme {
     text-align: center;
     border: thin solid #8c4646;
+}
+
+#aboutme-content p {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: black;
 }
 
 #bottom-row {
@@ -462,7 +467,7 @@ img.card__text {
 
 #small-container {
     height: 100%;
-    width: 70%;
+    width: 600px;
     left: 50%;
 }
 
@@ -520,10 +525,29 @@ form {
 }
 
 #social, #contacts {
-    height: 200px;
+    height: 170px;
+
+}
+
+#social h5, #contacts h5 {
+    font-weight: bold;
+    color: black;
 }
 
 #copyright {
     height: 50px;
+    background-color: black;
 }
 
+#social div {
+    height: 130px;
+}
+
+#social div h5{
+
+}
+
+#social div p {
+    height: 20px;
+
+}
