@@ -540,14 +540,10 @@ form {
 }
 
 #social div {
-    height: 130px;
-}
-
-#social div h5{
-
+    height: 120px;
 }
 
 #social div p {
-    height: 20px;
+    height: 10px;
 
 }
