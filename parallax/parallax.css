@@ -71,7 +71,7 @@ h3 {
 }
 
 h3 span {
-    font-size: 1.9rem;
+    font-size: 2rem;
 }
 
 p {
@@ -211,7 +211,8 @@ p {
 }
 
 #parallax-photo img {
-    max-height:100%;
+    top: 10px;
+    max-height:70%;
 }
 
 
@@ -223,10 +224,16 @@ p {
 /*------------ Logo ------------*/
 
 .logo {
-    bottom: 0;
+    bottom: 10%;
+    height: 70px;
+    width: 150px;
+    color: #588c7e;
+    font-weight: bold;
 
 }
-
+.logo:hover {
+    color: #588c7e;
+}
 /*
 
 #logo_content {
