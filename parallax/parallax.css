@@ -1,0 +1,309 @@
+
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px|Open+Sans:400,300,300italic,400italic,600,600italic);
+
+@import url(https://fonts.googleapis.com/css?family=Poiret+One|Indie+Flower|Shadows+Into+Light|Josefin+Sans:400,600,600italic,700,400italic|Architects+Daughter|Kaushan+Script|Rock+Salt|Shadows+Into+Light+Two);
+
+/*
+
+font-family: 'Poiret One', cursive;
+
+font-family: 'Indie Flower', cursive;
+
+font-family: 'Shadows Into Light', cursive;
+
+font-family: 'Josefin Sans', sans-serif;
+
+font-family: 'Architects Daughter', cursive;
+
+font-family: 'Kaushan Script', cursive;
+
+font-family: 'Rock Salt', cursive;
+
+font-family: 'Shadows Into Light Two', cursive;
+
+*/
+@import url(https://fonts.googleapis.com/css?family=Cookie);
+/* font-family: 'Cookie', cursive; */
+
+/* =============================================================================
+ The Body
+============================================================================= */
+/**/
+
+html, body {
+    font-family: 'Poiret One', cursive;
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1;
+}
+
+.all_content {
+    width: 100%;
+    height: 100%;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+#home-page, #about-page, #portfolio-page, #contacts-page {
+    height: 100%;
+    min-height: 800px;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+    margin: 0;
+    border-right-color: #588c7e;
+    border-right-style: solid;
+    border-right-width: thin;
+
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+h3 span {
+    font-size: 1.9rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/**----- Aligning Divs ---------**/
+.center-h {
+    left: 50%;
+    transform: translate(-50%, 0%);
+     position: absolute;
+}
+
+.center-v {
+    top: 50%;
+    transform: translate(0%, -50%);
+     position: absolute;
+}
+
+.center-c {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+/*____________________________________________________________
+-------------------------------------------------------------- */
+/*------- NAV-BAR ----------*/
+.nav-top {
+    width: 100%;
+    height: 61px;
+    background-color: black;
+    z-index: 1000;
+    position: fixed;
+
+    -webkit-filter: opacity (0.2);
+    filter: opacity (0.2);
+}
+
+.nav-top a {
+    color: #fff;
+    font-size: .9rem;
+}
+
+/*--- logo - left ---*/
+
+#nav-logo, .s2 {
+    text-align: center;
+}
+
+#nav-logo a {
+   margin-top: 23px;
+}
+
+
+/*--- menu - center ---*/
+#nav-menu {
+    width: 100%;
+    height: 100%;
+}
+
+#nav-menu div {
+    background-color: black;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+    padding-top: 23px;
+}
+
+#nav-menu #home { width: 45px; }
+
+#nav-menu #about { width: 60px }
+
+#nav-menu #portfolio { width: 90px; }
+
+#nav-menu #contact { width: 70px; }
+
+#nav-menu.active {
+    background-color: #588c7e;
+    color: #000;
+    font-weight: bold;
+}
+
+
+/*____________________________________________________________
+-------------------------------------------------------------- */
+/*----------------- HOME PAGE --------------*/
+
+#home-page {
+
+}
+
+#home {
+    height: 100%;
+    background-color: black;
+}
+
+#home_content {
+    width: 100%;
+    height: 80%;
+    left: 12px;
+    margin-top: 10%;
+    position: relative;
+    display:inline-block;
+}
+
+#home_content .s3 {
+    width: 10%;
+    height: 100%
+}
+
+/*------------ The photo(s) ------------*/
+
+#content {
+    width: 80%;
+    height: 100%;
+}
+
+#content ul {
+    width: 100%;
+    height: 100%;
+}
+
+#content ul li {
+    width: 100%;
+    height: 100%;
+}
+
+
+#parallax-photo {
+    width: 340px;
+    height: 100%;
+    overflow: hidden;
+    margin-right: auto;
+    background-color: #000;
+}
+
+#parallax-photo img {
+    max-height:100%;
+}
+
+
+.scene {
+  padding: 0;
+  margin: 0;
+}
+
+/*------------ Logo ------------*/
+
+.logo {
+    bottom: 0;
+
+}
+
+/*
+
+#logo_content {
+    width: 100%;
+    height: 70px;
+    margin-top:20px;
+    left: 12px;
+    position: relative;
+    display:inline-block;
+}
+
+#logo.s4 {
+    height: 100%;
+    text-align: center;
+    border: thin solid white;
+
+}
+
+#logo a {
+    top: -14px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    position: absolute;
+    color: #fff;
+}
+
+#logo a:hover {
+    color: #588c7e;
+}
+*/
+
+/*____________________________________________________________*/
+/*---mobile ---*/
+
+@media (max-width: 600px) {
+    h3 {
+        font-size: 1rem;
+    }
+    h3 span {
+        font-size: .9rem;
+    }
+    p {
+        font-size: .9rem;
+    }
+
+    #home_content {
+    margin-top: 60px;
+    }
+
+    #home_content .s4.photo {
+        width: 55%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        position: absolute;
+    }
+
+    #logo_content {
+        width: 100%;
+        height: 50px;
+        margin-top:20px;
+        left: 12px;
+        position: relative;
+        display:inline-block;
+    }
+
+    #logo.s4 {
+        height: 100%;
+        width: 50%;
+        margin-left: 25%;
+        text-align: center;
+        border: thin solid white;
+    }
+
+    #logo a {
+        left: 50%;
+        position: absolute;
+    }
+}
+
+
