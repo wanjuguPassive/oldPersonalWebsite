@@ -29,9 +29,13 @@ font-family: 'Shadows Into Light Two', cursive;
 ============================================================================= */
 html, body {
     height: 100%;
+    max-height: 100%;
     width: 100%;
+    max-width: 100%;
+    margin: 0;
     font-family: 'Poiret One', cursive;
 }
+
 .container {
     height: 100%;
     width: 700px;
@@ -57,6 +61,27 @@ html, body {
     position: absolute;
 }
 
+/*Parallax*/
+#scene {
+    height: 100%;
+    width: 700px;
+    margin: 0;
+}
+
+#scene li {
+    height: 100%;
+}
+
+.layer {
+    height: 600px;
+    width: 700px;
+}
+
+#large_circles, #small_shapes, #content_bg, title {
+
+    position: absolute;
+    top: 270px;
+}
 
 /*============================================================================= */
 .circle, .squircle {
@@ -211,3 +236,16 @@ span {
     transform: rotateZ(360deg);
   }
 }
+
+
+/*
+        <ul id="scene" class="scene">
+            <li class="layer" data-depth="1.000"><div class="large circle one"></div></li>
+            <li class="layer" data-depth="0.875"><div class="large circle two"></div>
+            <li class="layer" data-depth="0.750"><div class="large circle three"></div>
+            <li class="layer" data-depth="0.625"><div class="large circle four"></div>
+            <li class="layer" data-depth="0.500"><div class="large circle five"></div>
+            <li class="layer" data-depth="0.375"><div class="large circle six"></div>
+            <li class="layer" data-depth="0.250"><div class="large circle seven"></div>
+            <li class="layer" data-depth="0.000"><div class="large circle eight"></div>
+        </ul>*/

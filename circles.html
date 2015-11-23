@@ -12,10 +12,14 @@
 </head>
 
 <body>
-    <div class="container center-c">
+
+<div class="container center-c">
+
+    <ul id="scene" class="scene">
 
         <!--larger circles -->
-        <span class="large-circles">
+        <li class="layer" data-depth="1.000">
+        <span id="large_circles" class="large-circles">
             <div class="large circle one"></div>
             <div class="large circle two"></div>
             <div class="large circle three"></div>
@@ -25,9 +29,11 @@
             <div class="large circle seven"></div>
             <div class="large circle eight"></div>
         </span>
+        </li>
 
         <!--smaller circles -->
-        <span class="small-shapes">
+        <li class="layer" data-depth="0.50">
+        <span id="small_shapes" class="small-shapes">
             <div class="small circle one"></div>
             <div class="small squircle two"></div>
             <div class="small circle three"></div>
@@ -37,19 +43,43 @@
             <div class="small circle seven"></div>
             <div class="small squircle eight"></div>
         </span>
+        </li>
 
         <!--the content ones-->
-        <span class="content-squircle">
-            <div class="large squircle one"></div>
-        </span>
+        <li class="layer" data-depth="0.00">
+            <span id="content" class="content-squircle">
+                <div class="large squircle one"></div>
+            </span>
+            <span id="title" >
+            <div class="large squircle two">
+                  <h3 class="center-c"><strong>WANJUGU</strong></h3>
+            </div>
+            </span>
+        </li>
 
-        <div class="large squircle two">
+    </ul>
 
-              <h3 class="center-c"><strong>WANJUGU</strong></h3>
 
-        </div>
+
+
+
         <!-- two large squircles in the middle of the logo.-->
-    </div>
+
+
+</div>
+
+
+<!--- SCRIPTS --->
+
+<script src="parallax/scripts/jquery.js"></script>
+<script src="parallax/deploy/jquery.parallax.js"></script>
+<script>
+
+// Yep, that's it!
+$('#scene').parallax();
+
+</script>
 </body>
+
 
 </html>
