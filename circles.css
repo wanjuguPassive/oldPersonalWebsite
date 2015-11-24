@@ -34,11 +34,16 @@ html, body {
     max-width: 100%;
     margin: 0;
     font-family: 'Poiret One', cursive;
+    background-color: black;
 }
 
 .container {
     height: 100%;
     width: 700px;
+}
+
+h3, h2 {
+    color: white;
 }
 
 /**----- Aligning Divs ---------**/
@@ -77,11 +82,12 @@ html, body {
     width: 700px;
 }
 
-#large_circles, #small_shapes, #content_bg, title {
-
+#large_circles, #small_shapes, #content, #title {
     position: absolute;
     top: 270px;
 }
+
+
 
 /*============================================================================= */
 .circle, .squircle {
@@ -198,10 +204,15 @@ Let’s add the CSS to position each of these circles. */
   transform: rotateZ(45deg);
 }
 
+.large.squircle.two  {
+
+}
 .large.squircle.two h3 {
-    height: 40px;
+    height: 30px;
+    top: 4.6em;
     color:azure;
 }
+
 
 /*ROTATING THE CIRCLES*/
 /*First we position these span elements so that they don’t break the layout.*/
@@ -215,17 +226,31 @@ span {
 }
 
 /*Next we will apply animations to each of these three span elements.*/
+/*    animation:name duration timing-function delay iteration-count direction fill-mode play-state*/
 
-.large-circles {
-  animation: spin 10s linear infinite;
+#title {
+     -webkit-animation:rotateIn 3s ease 0s;
 }
 
-.small-shapes {
-  animation: spin 30s linear infinite;
+#content {
+    -webkit-animation:fadeIn 2s ease 1s,
+        spin 30s ease 4s infinite;
+    animation:fadeIn 2s ease 1s,
+        spin 30s ease 4s infinite;
 }
 
-.content-squircle {
-  animation: spin 20s linear infinite;
+#large_circles {
+    -webkit-animation:fadeIn 3s ease 5s,
+        spin 20s linear 7s infinite;
+    -animation:fadeIn 3s ease 5s,
+        spin 20s linear 7s infinite;
+}
+
+#small_shapes {
+    -webkit-animation:fadeIn 4s ease 7s,
+        spin 40s linear 9s infinite;
+    animation:fadeIn 4s ease 7s,
+        spin 40s linear 9s infinite;
 }
 
 @keyframes spin {

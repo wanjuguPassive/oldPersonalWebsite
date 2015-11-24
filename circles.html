@@ -8,7 +8,8 @@
     <title>Wanjugu</title>
     <link rel="shortcut icon" href="../favicon.ico">
     <!--- css -->
-        <link rel="stylesheet" href="circles.css">
+    <link rel="stylesheet" href="circles.css">
+    <link rel="stylesheet" href="main/css/animate.css">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
 
         <!--larger circles -->
         <li class="layer" data-depth="1.000">
-        <span id="large_circles" class="large-circles">
+        <span id="large_circles" class="large-circles animated">
             <div class="large circle one"></div>
             <div class="large circle two"></div>
             <div class="large circle three"></div>
@@ -33,26 +34,34 @@
 
         <!--smaller circles -->
         <li class="layer" data-depth="0.50">
-        <span id="small_shapes" class="small-shapes">
+        <span id="small_shapes" class="small-shapes animated">
             <div class="small circle one"></div>
-            <div class="small squircle two"></div>
+            <div id="about" class="small squircle two">
+                <h2 class="center-h"><strong>A</strong></h2>
+            </div>
             <div class="small circle three"></div>
-            <div class="small squircle four"></div>
+            <div class="small squircle four">
+                <h2 class="center-h"><strong>P</strong></h2>
+            </div>
             <div class="small circle five"></div>
-            <div class="small squircle six"></div>
+            <div class="small squircle six">
+                <h2 class="center-h"><strong>C</strong></h2>
+            </div>
             <div class="small circle seven"></div>
-            <div class="small squircle eight"></div>
+            <div class="small squircle eight">
+                <h2 class="center-h"><strong>H</strong></h2>
+            </div>
         </span>
         </li>
 
         <!--the content ones-->
         <li class="layer" data-depth="0.00">
-            <span id="content" class="content-squircle">
+            <span id="content" class="content-squircle animated">
                 <div class="large squircle one"></div>
             </span>
-            <span id="title" >
-            <div class="large squircle two">
-                  <h3 class="center-c"><strong>WANJUGU</strong></h3>
+            <span id="title" class="animated">
+            <div class="large squircle two ">
+                  <h3 class="center-h"><strong>WANJUGU</strong></h3>
             </div>
             </span>
         </li>
@@ -69,7 +78,8 @@
 </div>
 
 
-<!--- SCRIPTS --->
+<!--
+- SCRIPTS -
 
 <script src="parallax/scripts/jquery.js"></script>
 <script src="parallax/deploy/jquery.parallax.js"></script>
@@ -79,6 +89,7 @@
 $('#scene').parallax();
 
 </script>
+-->
 </body>
 
 
