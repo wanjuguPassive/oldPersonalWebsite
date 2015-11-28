@@ -29,17 +29,21 @@ font-family: 'Shadows Into Light Two', cursive;
 ============================================================================= */
 html, body {
     height: 100%;
-    max-height: 100%;
     width: 100%;
-    max-width: 100%;
     margin: 0;
     font-family: 'Poiret One', cursive;
     background-color: black;
 }
 
+#home_page, #about_page {
+    min-height: 100%;
+    width: 100%;
+/*    position: fixed;*/
+}
+
 .container {
     height: 100%;
-    width: 700px;
+    width: 1000px;
 }
 
 h3, h2 {
@@ -69,7 +73,7 @@ h3, h2 {
 /*Parallax*/
 #scene {
     height: 100%;
-    width: 700px;
+    width: 1000px;
     margin: 0;
 }
 
@@ -84,12 +88,14 @@ h3, h2 {
 
 #large_circles, #small_shapes, #content, #title {
     position: absolute;
-    top: 270px;
+    top: 195px;
 }
 
 
 
 /*============================================================================= */
+
+/*--- HOME PAGE ----*/
 .circle, .squircle {
   border-top: 0.1em solid rgba(255,255,255,0.4);
   height: 12.5em;
@@ -102,8 +108,8 @@ h3, h2 {
   border-radius: 50%;
   box-shadow: 0 1em 2em rgba(0,0,0,0.5);
   left: calc(50% - 6.25em);
-  top: calc(50% - 12.5em);
-  transform-origin: 50% 12.5em;
+  top: calc(50% - 17em);
+  transform-origin: 50% 17em;
 }
 
 /*When you rotate an object in HTML using a transform, it rotates around a point called the transform-origin.
@@ -152,8 +158,8 @@ Let’s add the CSS to position each of these circles. */
   width: 4em;
   height: 4em;
   left: calc(50% - 2em);
-  top: calc(50% - 15em);
-  transform-origin: 50% 15em;
+  top: calc(50% - 22em);
+  transform-origin: 50% 22em;
   box-shadow: 0 0.25em 0.5em rgba(0,0,0,0.2);
 }
 
@@ -193,11 +199,12 @@ Let’s add the CSS to position each of these circles. */
   background: rgba(30, 7, 66, 0.65);
   border: none;
   height: 15em;
+  width: 15em;
   left: calc(50% - 7.5em);
   position: absolute;
   top: calc(50% - 7.5em);
   transform: none;
-  width: 15em;
+
 }
 
 .large.squircle.one {
@@ -228,30 +235,40 @@ span {
 /*Next we will apply animations to each of these three span elements.*/
 /*    animation:name duration timing-function delay iteration-count direction fill-mode play-state*/
 
+/*
+#large_circles, #small_shapes, #content, #title {
+   animation:
+       spin .5s linear 0s 8,
+        spin 1s linear 4s 3,
+        spin 7s linear 7s 2,
+        spin 14s ease 22s 1;
+*/
+
 #title {
-     -webkit-animation:rotateIn 3s ease 0s;
+     -webkit-animation:rotateIn 3s ease;
 }
 
 #content {
-    -webkit-animation:fadeIn 2s ease 1s,
-        spin 30s ease 4s infinite;
-    animation:fadeIn 2s ease 1s,
-        spin 30s ease 4s infinite;
+    -webkit-animation:
+        spin 30s ease infinite;
+    animation:
+        spin 30s ease infinite;
 }
 
 #large_circles {
-    -webkit-animation:fadeIn 3s ease 5s,
-        spin 20s linear 7s infinite;
-    -animation:fadeIn 3s ease 5s,
-        spin 20s linear 7s infinite;
+    -webkit-animation:
+        spin 20s linear infinite;
+    -animation:
+        spin 20s linear infinite;
 }
 
 #small_shapes {
-    -webkit-animation:fadeIn 4s ease 7s,
-        spin 40s linear 9s infinite;
-    animation:fadeIn 4s ease 7s,
-        spin 40s linear 9s infinite;
+    -webkit-animation:
+        spin 40s linear infinite;
+    animation:
+        spin 40s linear infinite;
 }
+
 
 @keyframes spin {
   0% {
@@ -262,15 +279,36 @@ span {
   }
 }
 
-
+/*HOVER EFFECTS*/
+#small_shapes:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
 /*
-        <ul id="scene" class="scene">
-            <li class="layer" data-depth="1.000"><div class="large circle one"></div></li>
-            <li class="layer" data-depth="0.875"><div class="large circle two"></div>
-            <li class="layer" data-depth="0.750"><div class="large circle three"></div>
-            <li class="layer" data-depth="0.625"><div class="large circle four"></div>
-            <li class="layer" data-depth="0.500"><div class="large circle five"></div>
-            <li class="layer" data-depth="0.375"><div class="large circle six"></div>
-            <li class="layer" data-depth="0.250"><div class="large circle seven"></div>
-            <li class="layer" data-depth="0.000"><div class="large circle eight"></div>
-        </ul>*/
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+*/
+
+}
+
+#about:hover {
+    width: 7em;
+    height: 7em;
+    top: calc(50% - 30em);
+    transform-origin: 50% 30em;
+    transform: translate(50px,100px);
+
+
+}
+
+#about::after{
+
+
+}
+
+/*============================================================================= */
+
+/*--- ABOUT PAGE ----*/
+
+#about_page {
+    background-color:rgba(37, 172, 162, 0.75);
+}
