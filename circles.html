@@ -10,6 +10,10 @@
     <!--- css -->
     <link rel="stylesheet" href="circles.css">
     <link rel="stylesheet" href="main/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css" />
+
+    <script src="materialize/js/materialize.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
 </head>
 
 <body>
@@ -17,61 +21,66 @@
 <!--------------------------------------------------------------------->
 
 <!--- HOME PAGE -->
-<div  id="home_page">
-    <div class="container center-c">
+<div id="home_page">
+    <div class="container center-c row">
+        <div id="sides" class="col s2"></div>
 
-        <ul id="scene" class="scene">
+        <div id="home_content" class="col s8">
+            <ul id="scene" class="scene">
 
-            <!--larger circles -->
-            <li class="layer" data-depth="0.00">
-            <span id="large_circles" class="large-circles animated center-v">
-                <div class="large circle one"></div>
-                <div class="large circle two"></div>
-                <div class="large circle three"></div>
-                <div class="large circle four"></div>
-                <div class="large circle five"></div>
-                <div class="large circle six"></div>
-                <div class="large circle seven"></div>
-                <div class="large circle eight"></div>
-            </span>
-            </li>
-
-            <!--smaller circles -->
-            <li class="layer" data-depth="1.00">
-            <span id="small_shapes" class="small-shapes animated center-v">
-                <div class="small circle one"></div>
-                <div id="about" class="small squircle two">
-                    <a href = "#">
-                        <h2 class="center-h"><strong>A</strong></h2>
-                    </a>
-                </div>
-                <div class="small circle three"></div>
-                <div class="small squircle four">
-                    <h2 class="center-h"><strong>P</strong></h2>
-                </div>
-                <div class="small circle five"></div>
-                <div class="small squircle six">
-                    <h2 class="center-h"><strong>C</strong></h2>
-                </div>
-                <div class="small circle seven"></div>
-                <div class="small squircle eight">
-                    <h2 class="center-h"><strong>H</strong></h2>
-                </div>
-            </span>
-            </li>
-
-            <!--the content ones-->
-            <li class="layer" data-depth="0.00">
-                <span id="content" class="content-squircle animated center-v">
-                    <div class="large squircle one"></div>
+                <!--larger circles -->
+                <li class="layer center-c" data-depth="0.00">
+                <span id="large_circles" class="large-circles animated">
+                    <div class="large circle one"></div>
+                    <div class="large circle two"></div>
+                    <div class="large circle three"></div>
+                    <div class="large circle four"></div>
+                    <div class="large circle five"></div>
+                    <div class="large circle six"></div>
+                    <div class="large circle seven"></div>
+                    <div class="large circle eight"></div>
                 </span>
-                <span id="title" class="animated">
-                <div class="large squircle two ">
-                      <h3 class="center-h"><strong>WANJUGU</strong></h3>
-                </div>
+                </li>
+
+                <!--smaller circles -->
+                <li class="layer center-c" data-depth="1.00">
+                <span id="small_shapes" class="small-shapes animated">
+                    <div class="small circle one"></div>
+                    <div id="about" class="small squircle two">
+                        <a href = "#">
+                            <h2 class="center-h"><strong>A</strong></h2>
+                        </a>
+                    </div>
+                    <div class="small circle three"></div>
+                    <div class="small squircle four">
+                        <h2 class="center-h"><strong>P</strong></h2>
+                    </div>
+                    <div class="small circle five"></div>
+                    <div class="small squircle six">
+                        <h2 class="center-h"><strong>C</strong></h2>
+                    </div>
+                    <div class="small circle seven"></div>
+                    <div class="small squircle eight">
+                        <h2 class="center-h"><strong>H</strong></h2>
+                    </div>
                 </span>
-            </li>
-        </ul>
+                </li>
+
+                <!--the content ones-->
+                <li class="layer center-c" data-depth="0.00">
+                    <span id="content" class="content-squircle animated">
+                        <div class="large squircle one"></div>
+                    </span>
+                    <span id="title" class="animated">
+                    <div class="large squircle two ">
+                          <h3 class=""><strong>WANJUGU</strong></h3>
+                    </div>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div id="sides" class="col s2"></div>
+
     </div>
 
 </div>
