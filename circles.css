@@ -198,6 +198,7 @@ Let’s add the CSS to position each of these circles. */
   box-shadow: none;
 }
 
+/*
 .small.squircle::after {
   background: red;
   border-radius: 25%;
@@ -208,17 +209,18 @@ Let’s add the CSS to position each of these circles. */
   transform: rotateZ(-45deg);
   width: 100%;
 }
+*/
 
-.small.squircle.two::after {
+.small.squircle.two {
   background: rgba(37, 172, 162, 0.75);
 }
-.small.squircle.four::after {
+.small.squircle.four {
   background: rgba(235, 67, 35, 0.75);
 }
-.small.squircle.six::after {
+.small.squircle.six {
   background: rgba(208, 57, 159, 0.75);
 }
-.small.squircle.eight::after {
+.small.squircle.eight {
   background: rgba(95, 33, 203, 0.75);
 }
 
@@ -251,14 +253,25 @@ Let’s add the CSS to position each of these circles. */
     font-size: 2em;
 }
 
+.small.squircle {}
+
 .small.squircle div {
 
 }
 
-.small.squircle div h2 {
+.small.squircle div a h2 {
     font-size: 2em;
-/*    z-index: 6;*/
     margin-top: 20%;
+}
+
+#about a h2 {
+    font-size: 2em;
+    margin-top: 20%;
+
+}
+
+#SmallShapes{
+    z-index: 10;
 }
 
 
@@ -313,20 +326,53 @@ span {
 }
 
 #small_shapes {
+/*
+    -webkit-animation:
+        spin 40s linear infinite;
+    animation:
+        spin 40s linear infinite;
+*/
+}
+
+#about{
     -webkit-animation:
         spin 40s linear infinite;
     animation:
         spin 40s linear infinite;
 }
 
-
-
-/*HOVER EFFECTS*/
-#small_shapes{
-    pointer-events: none;
+#portfolio {
+    -webkit-animation:
+        spin 40s linear 10s infinite;
+    animation:
+        spin 40s linear 10s infinite;
 }
 
-#small_shapes:hover {
+#contacts {
+    -webkit-animation:
+        spin 40s linear 20s infinite;
+    animation:
+        spin 40s linear 20s infinite;
+}
+
+#random {
+    -webkit-animation:
+        spin 40s linear 30s infinite;
+    animation:
+        spin 40s linear 30s infinite;
+}
+
+
+/*============================================================================= */
+/*HOVER EFFECTS*/
+#small_shapes{
+
+}
+
+#SmallShapes {}
+
+/* Pausing Animation on hover */
+#about:hover,#portfolio:hover, #contacts:hover, #random:hover {
     -webkit-animation-play-state: paused;
     animation-play-state: paused;
     -moz-animation-play-state: paused;
@@ -338,14 +384,56 @@ span {
     height: 0rem;
 }
 .small.squircle, .small.circle {
-    pointer-events: none;
+
 }
 
-.small.squircle:hover {
+.small.squircle:selected {
     width: 7em;
     height: 7em;
     top: calc(50% - 30em);
     transform-origin: 50% 30em;
+}
+
+#about {
+
+}
+
+
+/*============================================================================= */
+/*popup divs*/
+
+.cancel {
+    display:block;
+    position:absolute;
+    top:3px; right:2px;
+    background:rgb(245,245,245);
+    color:black;
+    height:30px;
+    width:35px;
+    font-size:30px;
+    text-decoration:none;
+    text-align:center;
+    font-weight:bold;
+}
+
+#about_page:target {
+    display:block;
+    opacity:2;
+}
+
+#portfolio_page:target {
+    display:block;
+    opacity:2;
+}
+
+#contact_page:target {
+    display:block;
+    opacity:2;
+}
+
+#random_page:target {
+    display:block;
+    opacity:2;
 }
 
 
@@ -425,40 +513,4 @@ span {
 
 #random_page .container {
     width: 1000px;
-}
-/*============================================================================= */
-/*popup divs*/
-
-.cancel {
-    display:block;
-    position:absolute;
-    top:3px; right:2px;
-    background:rgb(245,245,245);
-    color:black;
-    height:30px;
-    width:35px;
-    font-size:30px;
-    text-decoration:none;
-    text-align:center;
-    font-weight:bold;
-}
-
-#about_page:target {
-    display:block;
-    opacity:2;
-}
-
-#portfolio_page:target {
-    display:block;
-    opacity:2;
-}
-
-#contact_page:target {
-    display:block;
-    opacity:2;
-}
-
-#random_page:target {
-    display:block;
-    opacity:2;
 }
