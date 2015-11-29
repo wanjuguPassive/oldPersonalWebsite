@@ -264,7 +264,7 @@ Let’s add the CSS to position each of these circles. */
     margin-top: 20%;
 }
 
-#about a h2 {
+#about h2, #portfolio h2, #contacts h2, #random h2 {
     font-size: 2em;
     margin-top: 20%;
 
@@ -290,14 +290,6 @@ span {
 /*    animation:name duration timing-function delay iteration-count direction fill-mode play-state*/
 
 /*
-#large_circles, #small_shapes, #content, #title {
-   animation:
-       spin .5s linear 0s 8,
-        spin 1s linear 4s 3,
-        spin 7s linear 7s 2,
-        spin 14s ease 22s 1;
-*/
-
 @keyframes spin {
   0% {
     transform: rotateZ(0);
@@ -307,8 +299,32 @@ span {
   }
 }
 
+@keyframes unhide {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  25% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  50% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  75% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+*/
+
 #title {
-     -webkit-animation:rotateIn 3s ease;
+     -webkit-animation:rotateIn 4s ease;
 }
 
 #content {
@@ -325,54 +341,55 @@ span {
         spin 20s linear infinite;
 }
 
-#small_shapes {
-/*
-    -webkit-animation:
-        spin 40s linear infinite;
-    animation:
-        spin 40s linear infinite;
-*/
+/*Small circles transitions*/
+#about, #portfolio, #contacts, #random {
+
 }
 
+
 #about{
+
     -webkit-animation:
-        spin 40s linear infinite;
+        unhide 6s ease-in,
+        spin 40s linear 5s infinite;
     animation:
-        spin 40s linear infinite;
+        unhide 6s ease-in,
+        spin 40s linear 5s infinite;
 }
 
 #portfolio {
     -webkit-animation:
-        spin 40s linear 10s infinite;
+        unhide 18s ease-in,
+        spin 40s linear 15s infinite;
     animation:
-        spin 40s linear 10s infinite;
+        unhide 18s ease-in,
+        spin 40s linear 15s infinite;
+    0s infinite;
 }
 
 #contacts {
     -webkit-animation:
-        spin 40s linear 20s infinite;
+        unhide 30s ease-in,
+        spin 40s linear 25s infinite;
     animation:
-        spin 40s linear 20s infinite;
+        unhide 30s ease-in,
+        spin 40s linear 25s infinite;
 }
 
 #random {
     -webkit-animation:
-        spin 40s linear 30s infinite;
+        unhide 41s ease-in,
+        spin 40s linear 35s infinite;
     animation:
-        spin 40s linear 30s infinite;
+        unhide 41s ease-in,
+        spin 40s linear 35s infinite;
 }
 
 
 /*============================================================================= */
 /*HOVER EFFECTS*/
-#small_shapes{
-
-}
-
-#SmallShapes {}
-
 /* Pausing Animation on hover */
-#about:hover,#portfolio:hover, #contacts:hover, #random:hover {
+#about:hover, #portfolio:hover, #contacts:hover, #random:hover {
     -webkit-animation-play-state: paused;
     animation-play-state: paused;
     -moz-animation-play-state: paused;
@@ -387,14 +404,53 @@ span {
 
 }
 
-.small.squircle:selected {
-    width: 7em;
-    height: 7em;
-    top: calc(50% - 30em);
-    transform-origin: 50% 30em;
+/*First Letters*/
+#about div h2, #portfolio div h2, #contacts div h2, #random div h2  {
+    height: 20px;
 }
 
-#about {
+/*The rest of the letters*/
+#about div p, #portfolio div p, #contacts div p, #random div p {
+    height: 7rem;
+    width: 7rem;
+    font-size: 1.5rem;
+    top: .5rem;
+    padding-top: .5em;
+}
+
+#about div p {
+    padding-left: 1.35em;
+    color: rgba(37, 172, 162, 0.75);
+}
+
+#portfolio div p {
+    padding-left: .8em;
+    color: rgba(235, 67, 35, 0.75);
+}
+
+#contacts div p {
+    padding-left: 1em;
+    color: rgba(208, 57, 159, 0.75);
+}
+
+#random div p {
+    padding-left: .9em;
+    color: rgba(95, 33, 203, 0.75);
+}
+
+#about div p:hover, #about div p:active, #portfolio div p:hover, #contacts div p:hover, #random div p:hover {
+    height: 30px;
+    color: #fff;
+    top: 2.7rem;
+    transition: all 0.6s ease;
+}
+
+#about:hover, #portfolio:hover, #contacts:hover, #random:hover{
+    width: 7em;
+    height: 7em;
+    top: calc(50% - 27em);
+    transform-origin: 50% 27em;
+    transition: all 0.6s ease;
 
 }
 
@@ -436,6 +492,16 @@ span {
     opacity:2;
 }
 
+#about_page, #portfolio_page, #contact_page, #random_page {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+/*
+    position:fixed;
+    display:none;
+*/
+}
 
 /*============================================================================= */
 
@@ -443,13 +509,6 @@ span {
 
 #about_page {
     background-color:rgba(37, 172, 162, 0.75);
-/*    position:fixed; */
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-/*    display:none;*/
-
 }
 
 #about_page .container {
@@ -462,14 +521,6 @@ span {
 
 #portfolio_page {
     background-color:rgba(235, 67, 35, 0.75);
-/*    position:fixed; */
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    overflow: hidden;
-/*    display:none;*/
-
 }
 
 #portfolio_page .container {
@@ -482,13 +533,6 @@ span {
 
 #contact_page {
     background-color:rgba(208, 57, 159, 0.75);
-/*    position:fixed; */
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-/*    display:none;*/
-
 }
 
 #contact_page .container {
@@ -502,13 +546,6 @@ span {
 
 #random_page {
     background-color:rgba(95, 33, 203, 0.75);
-/*    position:fixed; */
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-/*    display:none;*/
-
 }
 
 #random_page .container {
