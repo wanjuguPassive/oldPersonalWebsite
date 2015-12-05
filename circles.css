@@ -99,7 +99,6 @@ h3, h2 {
 }
 
 
-
 /*============================================================================= */
 
 /*--- HOME PAGE ----*/
@@ -123,270 +122,9 @@ h3, h2 {
     height: 100%;
 }
 
-.circle, .squircle {
-  border-top: 0.1em solid rgba(255,255,255,0.4);
-  height: 12.5em;
-  position: absolute;
-  width: 12.5em;
-}
 
 
-.circle {
-  border-radius: 50%;
-  box-shadow: 0 1em 2em rgba(0,0,0,0.5);
-  left: calc(50% - 6.25em);
-  top: calc(50% - 17em);
-  transform-origin: 50% 17em;
-}
-
-/*When you rotate an object in HTML using a transform, it rotates around a point called the transform-origin.
-Let’s add the CSS to position each of these circles. */
-
-.one {
-  background: rgba(16, 63, 236, 0.75);
-  transform: rotateZ(225deg);
-}
-.two {
-  background: rgba(37, 172, 162, 0.75);
-  transform: rotateZ(180deg);
-}
-.three {
-  background: rgba(233, 124, 32, 0.75);
-  transform: rotateZ(135deg);
-}
-.four {
-  background: rgba(235, 67, 35, 0.75);
-  transform: rotateZ(90deg);
-}
-.five {
-  background: rgba(190, 28, 65, 0.75);
-  transform: rotateZ(45deg);
-}
-.six {
-  background: rgba(208, 57, 159, 0.75);
-  transform: rotateZ(0);
-}
-.seven {
-  background: rgba(150, 32, 198, 0.75);
-  transform: rotateZ(-45deg);
-}
-.eight {
-  background: rgba(95, 33, 203, 0.75);
-  transform: rotateZ(-90deg);
-}
-
-/*The smaller Circles*/
-
-.squircle {
-  border-radius: 25%;
-}
-
-.small {
-  width: 4em;
-  height: 4em;
-  left: calc(50% - 2em);
-  top: calc(50% - 22em);
-  transform-origin: 50% 22em;
-  box-shadow: 0 0.25em 0.5em rgba(0,0,0,0.2);
-}
-
-/*By using the same transform-origin trick, the rotate transforms from earlier will put them into the correct position without need for any more CSS.*/
-
-.small.squircle {
-  background: none;
-  border: none;
-  box-shadow: none;
-}
-
-/*
-.small.squircle::after {
-  background: red;
-  border-radius: 25%;
-  box-shadow: -0.25em 0.25em 0.5em rgba(0,0,0,0.2);
-  content: "";
-  height: 100%;
-  position: absolute;
-  transform: rotateZ(-45deg);
-  width: 100%;
-}
-*/
-
-.small.squircle.two {
-  background: rgba(37, 172, 162, 0.75);
-}
-.small.squircle.four {
-  background: rgba(235, 67, 35, 0.75);
-}
-.small.squircle.six {
-  background: rgba(208, 57, 159, 0.75);
-}
-.small.squircle.eight {
-  background: rgba(95, 33, 203, 0.75);
-}
-
-.large.squircle {
-  background: rgba(30, 7, 66, 0.65);
-  border: none;
-  height: 15em;
-  width: 15em;
-  left: calc(50% - 7.5em);
-  position: absolute;
-  top: calc(50% - 7.5em);
-  transform: none;
-
-}
-
-.large.squircle.one {
-  transform: rotateZ(45deg);
-}
-
-.large.squircle.two  {
-
-}
-.large.squircle.two div {
-    height: 50px;
-    margin-top: 30%;
-    color:azure;
-}
-
-.large.squircle.two div h3 {
-    font-size: 2em;
-}
-
-.small.squircle {}
-
-.small.squircle div {
-
-}
-
-.small.squircle div a h2 {
-    font-size: 2em;
-    margin-top: 20%;
-}
-
-#about h2, #portfolio h2, #contacts h2, #random h2 {
-    font-size: 2em;
-    margin-top: 20%;
-
-}
-
-#SmallShapes{
-    z-index: 10;
-}
-
-
-/*ROTATING THE CIRCLES*/
-/*First we position these span elements so that they don’t break the layout.*/
-span {
-  display: block;
-  height: 20em;
-  left: calc(50% - 10em);
-  position: absolute;
-  top: calc(50% - 10em);
-  width: 20em;
-}
-
-/*Next we will apply animations to each of these three span elements.*/
-/*    animation:name duration timing-function delay iteration-count direction fill-mode play-state*/
-
-/*
-@keyframes spin {
-  0% {
-    transform: rotateZ(0);
-  }
-  100% {
-    transform: rotateZ(360deg);
-  }
-}
-
-@keyframes unhide {
-  0% {
-    visibility: hidden;
-    opacity: 0;
-  }
-  25% {
-    visibility: hidden;
-    opacity: 0;
-  }
-  50% {
-    visibility: hidden;
-    opacity: 0;
-  }
-  75% {
-    visibility: hidden;
-    opacity: 0;
-  }
-  100% {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-*/
-
-#title {
-     -webkit-animation:rotateIn 4s ease;
-}
-
-#content {
-    -webkit-animation:
-        spin 30s ease infinite;
-    animation:
-        spin 30s ease infinite;
-}
-
-#large_circles {
-    -webkit-animation:
-        spin 20s linear infinite;
-    -animation:
-        spin 20s linear infinite;
-}
-
-/*Small circles transitions*/
-#about, #portfolio, #contacts, #random {
-
-}
-
-
-#about{
-
-    -webkit-animation:
-        unhide 6s ease-in,
-        spin 40s linear 5s infinite;
-    animation:
-        unhide 6s ease-in,
-        spin 40s linear 5s infinite;
-}
-
-#portfolio {
-    -webkit-animation:
-        unhide 18s ease-in,
-        spin 40s linear 15s infinite;
-    animation:
-        unhide 18s ease-in,
-        spin 40s linear 15s infinite;
-    0s infinite;
-}
-
-#contacts {
-    -webkit-animation:
-        unhide 30s ease-in,
-        spin 40s linear 25s infinite;
-    animation:
-        unhide 30s ease-in,
-        spin 40s linear 25s infinite;
-}
-
-#random {
-    -webkit-animation:
-        unhide 41s ease-in,
-        spin 40s linear 35s infinite;
-    animation:
-        unhide 41s ease-in,
-        spin 40s linear 35s infinite;
-}
-
-
-/*============================================================================= */
+/*------------------------------------------------------------------------- */
 /*HOVER EFFECTS*/
 /* Pausing Animation on hover */
 #about:hover, #portfolio:hover, #contacts:hover, #random:hover {
@@ -508,7 +246,19 @@ span {
 /*--- ABOUT PAGE ----*/
 
 #about_page {
+    background-color
+}
+
+.sqDiv {
     background-color:rgba(37, 172, 162, 0.75);
+    height: 825px;
+    width: 825px;
+    border-radius: 50%;
+
+    position: absolute;
+
+    transform: none;
+
 }
 
 #about_page .container {
