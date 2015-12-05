@@ -235,10 +235,16 @@ h3, h2 {
     left:0;
     width:100%;
     height:100%;
-/*
     position:fixed;
     display:none;
-*/
+}
+
+/*Circle Div*/
+.sqDiv {
+    height: 825px;
+    width: 825px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 /*============================================================================= */
@@ -246,48 +252,79 @@ h3, h2 {
 /*--- ABOUT PAGE ----*/
 
 #about_page {
-    background-color
+/*    background-color:aliceblue*/
 }
 
-.sqDiv {
+#about-sq {
     background-color:rgba(37, 172, 162, 0.75);
-    height: 825px;
-    width: 825px;
-    border-radius: 50%;
+}
 
+.container {
+    height: 100%;
+    margin: 0;
+/*
+    border-right-color: #588c7e;
+    border-right-style: solid;
+    border-right-width: thin;
+*/
+
+}
+
+#mid-row {
     position: absolute;
+/*    width: 100%;*/
+}
 
-    transform: none;
+#mid-row .s2, #mid-row .s8 {
+    height: 100%;
+}
+
+/*--- Content ----*/
+#mid-row {
+    height: 400px;
+    width: 500px;
+    top: 250px;
 
 }
 
-#about_page .container {
-    width: 1000px;
+#aboutme {
+    text-align: center;
+    border: thin solid #8c4646;
 }
+
+#aboutme-content p {
+    font-size: 1.4em;
+/*    font-weight: bold;*/
+    color:black;
+}
+
 
 /*============================================================================= */
 
 /*--- PORTFOLIO PAGE ----*/
 
 #portfolio_page {
+    background-color:aliceblue;
+}
+
+#portfolio-sq {
     background-color:rgba(235, 67, 35, 0.75);
 }
 
-#portfolio_page .container {
-    width: 1000px;
-}
 
 /*============================================================================= */
 
 /*--- CONTACTS PAGE ----*/
 
 #contact_page {
+    background-color:aliceblue;
+}
+
+#contact-sq {
     background-color:rgba(208, 57, 159, 0.75);
 }
 
-#contact_page .container {
-    width: 1000px;
-}
+
 
 
 /*============================================================================= */
@@ -295,9 +332,10 @@ h3, h2 {
 /*--- RANDOM PAGE ----*/
 
 #random_page {
+        background-color:aliceblue;
+}
+
+#random-sq {
     background-color:rgba(95, 33, 203, 0.75);
 }
 
-#random_page .container {
-    width: 1000px;
-}
