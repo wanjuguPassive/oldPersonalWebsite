@@ -39,11 +39,17 @@ html, body {
     background-color: black;
 }
 
-#home_page, #about_page {
-    height: 100%;
-    width: 100%;
-    min-height: 800px;
-/*    position: fixed;*/
+#home_page, #about_page, #portfolio_page, #contact_page, #random_page {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    min-height: 100%;
+    position: relative;
+/*
+    position:fixed;
+    display:none;
+*/
 }
 
 #home_page {
@@ -220,19 +226,6 @@ h3, h2 {
     opacity:2;
 }
 
-#home_page, #about_page, #portfolio_page, #contact_page, #random_page {
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    min-height: 100%;
-    position: relative;
-/*
-    position:fixed;
-    display:none;
-*/
-}
-
 /*Circle Div*/
 .sqDiv {
     height: 730px;
@@ -309,24 +302,68 @@ h3, h2 {
     background-color:rgba(235, 67, 35, 0.75);
 }
 
-#portfolio-sq p {
-    top: 20%;
+#portfolio-title, #portfolio-content {
+    margin-left: 3px;
+    top: 40px;
+    position: relative
+}
+
+#portfolio-title {
+    width: 300px;
+    height: 100px;
+    position: relative;
+    text-align: center;
+    border: thin solid #8c4646;
+
+}
+
+#portfolio-content p {
     position: relative;
     width: 120px;
     color: white;
     font-size: 1.2rem;
+    text-align: center;
 }
 
-#portfolio-sq .row {
+#portfolio-content .row {
     height: 100px;
-    width: 600px;
+    width: 330px;
     position: relative;
-    top: 20%
+    top: 10%;
+    margin-left: 3px;
+
 }
 
-#portfolio-sq .row .s4 {
+#portfolio-content .row .s4 {
+    position: relative;
     height: 100%;
+    width: 100px;
+    display: block;
+    border-radius: 30%;
+    border-color: aliceblue;
+    border-style: solid;
+    border-width: thin;
+    margin-right: 10px;
 }
+
+#InsideOut {
+    background-color: aliceblue;
+}
+
+#InsideOut p{
+    color: coral;
+    font-weight: bold;
+}
+
+#portfolio-content .row .s4 p{
+    width: 100%;
+    top: 25%;
+    font-size: .9rem
+
+}
+
+
+
 
 
 /*============================================================================= */
