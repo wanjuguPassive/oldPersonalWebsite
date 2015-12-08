@@ -95,10 +95,10 @@ Let’s add the CSS to position each of these circles. */
   background: rgba(235, 67, 35, 0.75);
 }
 .small.squircle.six {
-  background: rgba(208, 57, 159, 0.75);
+    background: rgba(95, 33, 203, 0.75);
 }
 .small.squircle.eight {
-  background: rgba(95, 33, 203, 0.75);
+  background: rgba(208, 57, 159, 0.75);
 }
 
 .large.squircle {

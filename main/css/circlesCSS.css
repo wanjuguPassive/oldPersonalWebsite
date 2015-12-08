@@ -39,7 +39,15 @@ html, body {
     background-color: black;
 }
 
-#home_page, #about_page, #portfolio_page, #contact_page, #random_page {
+#home_page {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    min-height: 100%;
+    position: relative;
+}
+#about_page, #portfolio_page, #contact_page, #random_page {
     top:0;
     left:0;
     width:100%;
@@ -56,7 +64,7 @@ html, body {
     z-index: 5;
 }
 
-#about_page {
+#about_page, #portfolio_page, #contact_page, #random_page {
     z-index: 10;
 }
 
@@ -164,12 +172,13 @@ h3, h2 {
 
 #contacts div p {
     padding-left: 1em;
-    color: rgba(208, 57, 159, 0.75);
+    color: rgba(95, 33, 203, 0.75);
+
 }
 
 #random div p {
     padding-left: .9em;
-    color: rgba(95, 33, 203, 0.75);
+    color: rgba(208, 57, 159, 0.75);
 }
 
 #about div p:hover, #about div p:active, #portfolio div p:hover, #contacts div p:hover, #random div p:hover {
@@ -232,6 +241,17 @@ h3, h2 {
     width: 730px;
     border-radius: 50%;
     overflow: hidden;
+    margin-left: 3px;
+}
+
+
+/*Div Animations*/
+
+#about-sq, #portfolio-sq, #contact-sq, #random-sq {
+    -webkit-animation:
+        pulse 3s linear 0s infinite
+    animation:
+        pulse 3s linear 0s infinite
 }
 
 /*============================================================================= */
@@ -239,7 +259,7 @@ h3, h2 {
 /*--- ABOUT PAGE ----*/
 
 #about_page {
-    background-color:aliceblue;
+    background-color:black;
 /*    opacity:0.6;*/
 
 }
@@ -247,36 +267,23 @@ h3, h2 {
 .container {
     height: 100%;
     margin: 0;
-/*
-    border-right-color: #588c7e;
-    border-right-style: solid;
-    border-right-width: thin;
-*/
-
 }
 
 #about-sq {
     background-color:rgba(37, 172, 162, 0.75);
 }
 
-
-
+/*--- Content ----*/
 #mid-row {
-    position: absolute;
-/*    width: 100%;*/
+    height: 300px;
+    width: 500px;
+    top: 200px;
 }
 
 #mid-row .s2, #mid-row .s8 {
     height: 100%;
 }
 
-/*--- Content ----*/
-#mid-row {
-    height: 400px;
-    width: 500px;
-    top: 250px;
-
-}
 
 #aboutme {
     text-align: center;
@@ -284,9 +291,9 @@ h3, h2 {
 }
 
 #aboutme-content p {
-    font-size: 1.4em;
+    font-size: 1.6em;
 /*    font-weight: bold;*/
-    color:black;
+    color:white;
 }
 
 
@@ -295,7 +302,7 @@ h3, h2 {
 /*--- PORTFOLIO PAGE ----*/
 
 #portfolio_page {
-    background-color:aliceblue;
+    background-color:black;
 }
 
 #portfolio-sq {
@@ -310,13 +317,16 @@ h3, h2 {
 
 #portfolio-title {
     width: 300px;
-    height: 100px;
+    height: 80px;
     position: relative;
     text-align: center;
     border: thin solid #8c4646;
 
 }
 
+#portfolio-content {
+    width: 100%;
+}
 #portfolio-content p {
     position: relative;
     width: 120px;
@@ -359,7 +369,6 @@ h3, h2 {
     width: 100%;
     top: 25%;
     font-size: .9rem
-
 }
 
 
@@ -371,14 +380,28 @@ h3, h2 {
 /*--- CONTACTS PAGE ----*/
 
 #contact_page {
-    background-color:aliceblue;
+    background-color:black;
 }
 
 #contact-sq {
-    background-color:rgba(208, 57, 159, 0.75);
+    background-color:rgba(95, 33, 203, 0.75);
 }
 
+#contact-title {
+    width: 300px;
+    height: 80px;
+    position: relative;
+    text-align: center;
+    border: thin solid #8c4646;
+    top: 160px;
 
+}
+
+#contact-content {
+    top: 180px;
+    position: relative;
+
+}
 
 
 /*============================================================================= */
@@ -386,10 +409,10 @@ h3, h2 {
 /*--- RANDOM PAGE ----*/
 
 #random_page {
-        background-color:aliceblue;
+        background-color:black;
 }
 
 #random-sq {
-    background-color:rgba(95, 33, 203, 0.75);
+        background-color:rgba(208, 57, 159, 0.75);
 }
 
