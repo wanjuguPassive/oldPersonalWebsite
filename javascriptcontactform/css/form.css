@@ -1,0 +1,70 @@
+/* below line is write to use google font online  */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+div#contact-content{
+    width: 500px;
+    height: 300px;
+    margin: 0px auto;
+    color: white;
+/*font-family: 'Ubuntu', sans-serif;*/
+}
+
+div#contact_form{
+    text-align:center;
+    padding: 0px 50px 15px;
+    margin-top:20px;
+    border-radius: 6px;
+}
+
+label{
+/*float: left;*/
+    font-size: 1.5rem;
+    color: white;
+}
+
+label[name="hi"]{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+input[type="text"]{
+    margin-top:10px;
+    padding:10px;
+    border: none;
+    border-bottom:1px solid #fff;
+}
+
+
+input[name="dname"]{
+    width:100px;
+}
+
+input[name="demail"]{
+    width:200px;
+}
+
+textarea{
+/*    width:100%;*/
+    border: none;
+    border-bottom:1px solid #fff;
+    padding:10px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    height: 30px;
+    resize:vertical;
+}
+
+input[type="submit"]{
+    width: 200px;
+    margin-top: 30px;
+    padding: 10px 45px;
+    background-color: #2BC1F2;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+
