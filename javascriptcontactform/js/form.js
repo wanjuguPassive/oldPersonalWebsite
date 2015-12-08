@@ -79,3 +79,7 @@ var submitelement = document.createElement('input');
 	submitelement.setAttribute("name", "dsubmit");
 	submitelement.setAttribute("value", "Submit");
 	createform.appendChild(submitelement);
+
+function myFunction() {
+                document.getElementById("contact-form").submit();
+}

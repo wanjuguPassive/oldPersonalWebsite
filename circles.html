@@ -221,7 +221,17 @@
             </div>
            <!-- include JavaScript file here -->
            <script src="javascriptcontactform/js/form.js"></script>
+            <script type="text/javascript">
+                function submitform()
+                {
+                  if(document.contact_form.onsubmit())
+                  {
+                    document.contact_form.submit();
+                  }
+                }
+            </script>
             </div>
+
 
         </div>
 

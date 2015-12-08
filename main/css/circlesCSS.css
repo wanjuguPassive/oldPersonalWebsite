@@ -52,7 +52,7 @@ html, body {
     left:0;
     width:100%;
     height:100%;
-    min-height: 100%;
+    min-height: 800px;
     position: relative;
 /*
     position:fixed;
@@ -245,7 +245,8 @@ h3, h2 {
 }
 
 
-/*Div Animations*/
+/*
+Div Animations
 
 #about-sq, #portfolio-sq, #contact-sq, #random-sq {
     -webkit-animation:
@@ -253,6 +254,7 @@ h3, h2 {
     animation:
         pulse 3s linear 0s infinite
 }
+*/
 
 /*============================================================================= */
 
@@ -400,7 +402,7 @@ h3, h2 {
 #contact-content {
     top: 180px;
     position: relative;
-
+    z-index: 30;
 }
 
 
