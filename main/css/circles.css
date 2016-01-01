@@ -175,6 +175,15 @@ span {
   }
 }
 
+@keyframes antispin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
 @keyframes unhide {
   0% {
     visibility: hidden;
@@ -223,34 +232,33 @@ span {
 
 
 #about{
-
     -webkit-animation:
-        unhide 6s ease-in,
-        spin 40s linear 5s infinite;
+        unhide 3s ease-in,
+        antispin 40s linear 2s infinite;
     animation:
-        unhide 6s ease-in,
-        spin 40s linear 5s infinite;
+        unhide 3s ease-in,
+        antispin 40s linear 2s infinite;
 }
 
 #portfolio {
     -webkit-animation:
-        unhide 18s ease-in,
-        spin 40s linear 15s infinite;
+        unhide 16s ease-in,
+        antispin 40s linear 13s infinite;
     animation:
-        unhide 18s ease-in,
-        spin 40s linear 15s infinite;
-    0s infinite;
+        unhide 16s ease-in,
+        antispin 40s linear 13s infinite;
 }
 
 #contacts {
     -webkit-animation:
-        unhide 30s ease-in,
-        spin 40s linear 25s infinite;
+        unhide 31s ease-in,
+        antispin 40s linear 27s infinite;
     animation:
-        unhide 30s ease-in,
-        spin 40s linear 25s infinite;
+        unhide 31s ease-in,
+        antispin 40s linear 27s infinite;
 }
 
+/*
 #random {
     -webkit-animation:
         unhide 41s ease-in,
@@ -259,3 +267,4 @@ span {
         unhide 41s ease-in,
         spin 40s linear 35s infinite;
 }
+*/

@@ -328,6 +328,7 @@ Div Animations
 
 #portfolio-content {
     width: 100%;
+    z-index: 30;
 }
 #portfolio-content p {
     position: relative;
