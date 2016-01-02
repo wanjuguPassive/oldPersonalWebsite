@@ -2,21 +2,24 @@
 <html lang="en">
 
 <head>
+    <title>Wanjugu</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width" initial-scale: 1.0, user-scalable=0> <!--opitimized for mobile-->
-    <title>Wanjugu</title>
     <link rel="shortcut icon" href="../favicon.ico">
     <!--- css -->
     <link rel="stylesheet" href="main/css/circlesCSS.css">
     <link rel="stylesheet" href="main/css/circles.css">
     <link rel="stylesheet" href="main/css/animate.css">
     <link rel="stylesheet" href="main/css/bubble.css">
-    <link rel="stylesheet" href="javascriptcontactform/css/form.css"/>
     <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css" />
 
+    <!-- Scripts -->
     <script src="materialize/js/materialize.js"></script>
     <script src="materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="//www.parsecdn.com/js/parse-1.6.12.min.js"></script>
+    <script src="main/js/parseform.js"></script>
 </head>
 
 <body>
@@ -219,23 +222,24 @@
 
         <!--The contact form-->
         <div id="contact-content" class="row">
-            <div id="contact_form">
-            </div>
-           <!-- include JavaScript file here -->
-           <script src="javascriptcontactform/js/form.js"></script>
-            <script type="text/javascript">
-                function submitform()
-                {
-                  if(document.contact_form.onsubmit())
-                  {
-                    document.contact_form.submit();
-                  }
-                }
-            </script>
-            </div>
+            <form id="post-form">
 
+            <p>
+                My name is
+                <input id="first-name" type="text" placeholder="first name">
+                <input id="last-name" type="text" placeholder="last name">
+                & my email is
+                <input id="email" type="text" placeholder="me@me.com">
+                . I want to tell you that
+            </p>
 
+            <p><textarea id="message" type="text" placeholder=":)"></textarea></p>
+
+            <p><input id="post-submit" type="submit" class="center-h"></p>
+
+            </form>
         </div>
+
 
     </div>
 
@@ -246,6 +250,41 @@
 
 <!--------------------------------------------------------------------->
 <!--- SCRIPTS --->
+
+<!-- the form -->
+<script>
+Parse.initialize("IU7a7FRlt4XYkjop83ZeGjhGKw75WvTozxGQlALU", "A9l8Hay09r6OvWBh6GU4byFDzrGyNbX7ULAZBv1N");
+
+var Post = Parse.Object.extend("FormPost");
+
+//USING JQUERY ON FORM WITH PARSE
+//listening for the submit action on the form
+$("#post-form").submit(function(event){
+  event.preventDefault();
+
+      var firstname = $("#first-name").val();
+      var lastname = $("#last-name").val();
+      var email = $("#email").val();
+      var message = $("#message").val();
+
+      var newPost = new Post();
+      newPost.set("firstname", firstname);
+      newPost.set("lastname", lastname);
+      newPost.set("email", email);
+      newPost.set("message", message);
+
+
+      newPost.save({
+          success: function(){
+              $("#post-form").find('input[type=text]').val('');
+              $("#post-form").find('textarea[type=text]').val('');
+          },
+          error: function(error){
+              console.log("Error:"+error.message);
+          }
+    });
+});
+</script>
 
 <!--
 <script src="parallax/scripts/jquery.js"></script>
