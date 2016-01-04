@@ -1,110 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width" initial-scale: 1.0, user-scalable=0> <!--opitimized for mobile-->
-		<title>Wanjugu</title>
-		<link rel="shortcut icon" href="../favicon.ico">
+<head>
+    <title>Wanjugu</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" initial-scale: 1.0, user-scalable=0> <!--opitimized for mobile-->
+    <link rel="shortcut icon" href="../favicon.ico">
+    <!--- css -->
+    <link rel="stylesheet" href="main/css/circlesCSS.css">
+    <link rel="stylesheet" href="main/css/circles.css">
+    <link rel="stylesheet" href="main/css/animate.css">
+    <link rel="stylesheet" href="main/css/bubble.css">
+    <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css" />
 
-        <!--- css -->
-        <link rel="stylesheet" href="main/css/global.css">
-        <!--materialize -->
-        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css" />
-        <!-- flipping card -->
-        <link rel="stylesheet" href="1-flipping-card-source/css/common.css">
-        <link rel="stylesheet" href="1-flipping-card-source/css/cards.css">
+    <!-- Scripts -->
+    <script src="materialize/js/materialize.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="//www.parsecdn.com/js/parse-1.6.12.min.js"></script>
 
-      <!-- modernizr -->
-      <script src="1-flipping-card-source/js/common/modernizr.js"></script>
-            <!---- SCRIPTS ---->
-
-        <script src="main/js/jquery-2.1.4.js"></script>
-        <script src="materialize/js/materialize.js"></script>
-        <script src="materialize/js/materialize.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js">           </script>
-
-    </head>
-
-<!----------------------------- BODY ----------------------------->
+</head>
 
 <body>
-<!----------------------------------->
-<!---- NavBar----->
-<div class="row nav-top valign-wrapper">
-    <div id="nav-logo" class="col s2 hide-on-small-only">
-       <a href="#" class="left">Logo</a>
-    </div>
-    <div id="nav-menu" class="col s8 center-align valign">
-        <div id="home"><a href="#home-page">TOP</a></div>
-        <div id="about"><a href="#about-page">ABOUT</a></div>
-        <div id="portfolio"><a href="#portfolio-page">PORTFOLIO</a></div>
-        <div id="contact"><a href="#contacts-page">CONTACT</a></div>
-    </div>
-    <div class="col s2 hide-on-small-only"></div>
-</div>
 
-    <!----------------------------------->
+<!--------------------------------------------------------------------->
 
-<!---------------- PAGE 1: HOMEPAGE --------------------------------------->
-<div id="home-page" class="all_content">
+<!--- HOME PAGE -->
+<div id="home_page">
 
-    <div id="home" class="container">
-        <!----------------------------->
-        <!---- Photo --->
-        <div id="home_content" class="row">
-            <div class="col s3 hide-on-small-only"></div>
-            <div class="col s6">
-                <div id="one" class="fadein">
-                    <img src="main/assets/me1.jpg" class="center-c" alt="">
-                    <img src="main/assets/me3.jpg" class="center-c" alt="">
-                </div>
-            </div>
-            <div class="col s3 hide-on-small-only"></div>
-        </div> <!-- end row home-content -->
+    <!-- home content -->
+    <div id="home-content" class="container row center-c">
 
+        <div class="col s12">
+            <ul id="scene" class="scene">
 
-        <!------------------------------------>
-        <!--- logo --->
-        <div id="logo_content" class="row">
-            <div class="col s4 hide-on-small-only"></div>
-            <div id="logo" class="col s4">
-                <a href="#about">
-                    <h3><span> w</span>anjugu</h3>
-                </a>
-            </div>
-            <div class="col s4 hide-on-small-only"></div><!--- logo end --->
-        </div> <!-- end row logo-content -->
-        <!----------------------------------->
+                <!--larger circles -->
+                <li class="layer center-c" data-depth="0.00">
+                <span id="large_circles" class="large-circles animated">
+                    <div class="large circle one"></div>
+                    <div class="large circle two"></div>
+                    <div class="large circle three"></div>
+                    <div class="large circle four"></div>
+                    <div class="large circle five"></div>
+                    <div class="large circle six"></div>
+                    <div class="large circle seven"></div>
+                    <div class="large circle eight"></div>
+                </span>
+                </li>
 
-    </div> <!--- container --->
-</div>
+                <!--smaller circles -->
+                <li id="SmallShapes" class="layer center-c" data-depth="1.00">
+                <span id="small_shapes" class="small-shapes animated">
 
-<!------------------------- PAGE 2: ABOUT ----------------------------------->
-<div id="about-page" class="all_content">
+                    <div class="small circle one"></div>
 
-    <!-- content -->
-    <div id="about-content" class="container">
+                    <a href="#about_page">
+                        <div id="about" class="small squircle two">
+                            <div><h2 class="center-h">A</h2></div>
+                            <div><p class="center-c">bout</p></div>
+                        </div>
+                    </a>
 
-        <div id="top-row" class="row">
-            <div class="col s1"></div>
-            <div class="col s4">
-                <img src="main/assets/me5.jpg" class="center-h">
-            </div>
-            <div class="col s6"></div>
-            <div class="col s1 hide-on-small-only"></div>
+                    <div class="small circle three"></div>
 
+                    <a href="#portfolio_page">
+                        <div id="portfolio" class="small squircle four">
+                            <div><h2 class="center-h">P</h2></div>
+                            <div><p class="center-c">ortfolio</p></div>
+                        </div>
+                    </a>
+
+                    <div class="small circle five"></div>
+
+                    <a href="#contact_page">
+                        <div id="contacts" class="small squircle six">
+                            <div><h2 class="center-h">C</h2></div>
+                            <div><p class="center-c">ontact</p></div>
+                        </div>
+                    </a>
+
+                    <div class="small circle seven"></div>
+
+<!--
+                    <a href="#random_page">
+                        <div id="random" class="small squircle eight">
+                            <div><h2 class="center-h">R</h2></div>
+                            <div><p class="center-c">andom</p></div>
+                        </div>
+                    </a>
+-->
+
+                </span>
+                </li>
+
+                <!--the content ones-->
+                <li class="layer center-c" data-depth="0.00">
+                    <span id="content" class="content-squircle animated">
+                        <div class="large squircle one"></div>
+                    </span>
+                    <span id="title" class="animated">
+                    <div class="large squircle two ">
+                        <div>
+                            <a href="#about_page">
+                            <h3 class="center-h">WANJUGU</h3>
+                            </a>
+                        </div>
+                    </div>
+                    </span>
+                </li>
+            </ul>
         </div>
 
-        <div id="mid-row" class="row">
-            <div class="col s1"></div>
-            <div class="col s4 hide-on-small-only"></div>
-            <div class="col s6">
-                <div id="aboutme"><h3>
-                    <span>a</span>bout me
-                </h3> </div>
+    </div>
+
+</div>
+<!--------------------------------------------------------------------->
+<!--- ABOUT PAGE -->
+<div id="about_page">
+    <a href="#" class="cancel">&times;</a>
+
+    <!-- about content -->
+    <div id="about-content" class="container row">
+
+    <!--Squircle div-->
+    <div id="about-sq" class="row sqDiv center-c bubble animated">
+
+
+        <div id="mid-row" class="row center-h">
+            <div class="col s2"></div>
+            <div class="col s8">
+                <div id="aboutme">
+                    <h3>
+                    about me
+                    </h3>
+                </div>
 
                 <div id="aboutme-content">
                     <p>
@@ -115,291 +145,165 @@
                     ...a lover of life and all things simple. I am fascinated by the creativity that nature exudes...
                 </p></div>
             </div>
-            <div class="col s1 right"></div>
-        </div>
-
-        <div id="bottom-row" class="row">
-            <div class="col s1"></div>
-            <div class="col s4 hide-on-small-only"></div>
-            <div class="col s6"></div>
-            <div class="col s1 right"></div>
+            <div class="col s2 right"></div>
         </div>
 
     </div><!--about-content -->
 
-</div> <!--- about end --->
+    </div>
 
-<!------------------------- PAGE 3: PORTFOLIO ----------------------------------->
-<div id="portfolio-page" class="all_content">
 
-    <!-- content -->
-    <div id="portfolio-content" class="container">
-        <!--- title --->
-        <div id="myworks" class="row">
-            <div class="col s12">
-                <h3>
-                    <span>m</span>y works
-                </h3>
-            </div>
+</div>
+
+<!--------------------------------------------------------------------->
+<!--- PORTFOLIO PAGE -->
+<div id="portfolio_page">
+    <a href="#" class="cancel">&times;</a>
+
+    <!-- portfolio content -->
+    <div class="container row">
+
+    <!--Squircle div-->
+    <div id="portfolio-sq" class="row sqDiv center-c bubble animated">
+        <div id="portfolio-title" class="row center-h">
+            <h3>
+                portfolio
+            </h3>
         </div>
 
-        <!--- grid --->
-        <div id="ptop-row" class="row">
-            <div class="col s3"></div>
+        <div id="portfolio-content" class="row center-h">
 
-            <div class="col s3">
-                <div class="section__content clearfix">
-                    <!-- card -->
-                    <div class="card effect__random">
-                        <!--front-->
-                        <div class="card__front">
-                            <a href="http://inside-out-landing-page.bitballoon.com/">
-                                <p class ="center-c"> Inside Out Website</p>
-                            </a>
-                        </div>
-                        <!--back-->
-                        <div class="card__back">
-                            <a href="#"> a </a>
-                        </div>
-                    </div><!-- end card -->
-                </div>
-            </div>
 
-            <div class="col s3"></div>
-
-            <div class="col s3">
-                <div class="section__content clearfix">
-                    <!-- card -->
-                    <div class="card effect__random">
-                        <!--front-->
-                        <div class="card__front">
-                            <a href="https://appetize.io/app/6y1r5vbz1z5a0q1uej3wkrzwq0?device=nexus5&scale=75&orientation=portrait&osVersion=5.1&deviceColor=black">
-                            <p class ="center-c"> Dream Designs App</p>
-                            </a>
-                        </div>
-                        <!--back-->
-                        <div class="card__back">
-                            <a href="#"> a </a>
-                        </div>
-                    </div><!-- end card -->
-                </div>
-            </div>
-
-        </div>
-
-        <div id="pbottom-row" class="row">
-            <div class="col s3">
-                <div class="section-image center-align ">
-                    <div class="section__content clearfix valign-wrapper">
-                        <!-- card -->
-                        <div class="card effect__random">
-                            <!--front-->
-                            <div class="card__front">
-                                <a href="#"> w </a>
-                            </div>
-                            <!--back-->
-                            <div class="card__back">
-                                <a href="#"> a </a>
-                            </div>
-                        </div><!-- end card -->
+            <div id="row1" class="row center-h">
+                <!--Inside Out Page-->
+                <a href="http://inside-out-landing-page.bitballoon.com/">
+                    <div id="InsideOut" class="col s4">
+                        <img src="main/assets/insideout.png">
                     </div>
+                </a>
+
+                <div class="col s8 descr">
+                    <p class="center-h heading">'Inside Out' Landing Page</p>
+                    <p class ="center"> This is a mock landing page for one of my favourite animated movies - 'Inside Out'. The main mediums experimented upon in this project are colours, shapes and motion, all of which are used in the movie itself.</p>
                 </div>
             </div>
 
-            <div class="col s3"></div>
 
-            <div class="col s3">
-                <div class="section__content clearfix">
-                    <!-- card -->
-                    <div class="card effect__random">
-                        <!--front-->
-                        <div class="card__front">
-                            <a href="#"> w </a>
-                        </div>
-                        <!--back-->
-                        <div class="card__back">
-                            <a href="#"> a </a>
-                        </div>
-                    </div><!-- end card -->
-                </div>
-            </div>
+            <div id="row2" class="row center-h">
 
-            <div class="col s3"></div>
-        </div>
-
-    </div><!--portfolio-content -->
-
-</div><!--portfolio-page -->
-
-<!---------------------------------------------------------->
-    <!----- CONTACTS ------>
-
-<div id="contacts-page" class="all_content">
-
-    <!-- content -->
-    <div id="contacts-content" class="container">
-    <div id="small-container" class="center-h">
-        <!--- title --->
-        <div id="talk-to-me" class="row">
-            <div class="col s12">
-                <h3>
-                    <span>c</span>ontact me
-                </h3>
-            </div>
-        </div>
-
-        <!----- Form ----->
-        <div class="row">
-        <form class="col s12">
-
-                <!-- first row --->
-            <div id="form-names" class="row">
-                <div class="col s3"></div>
-                <!--- first name --->
-                <div class="input-field col s3">
-                    <input id="first_name" type="text" class="validate">
-                    <label for="first_name">First Name</label>
-                </div>
-
-                <!--- last name --->
-                <div class="input-field col s3">
-                      <input id="last_name" type="text" class="validate">
-                      <label for="last_name">Last Name</label>
-                </div>
-                <div class="col s3"></div>
-              </div>
-
-                <!-- second row --->
-              <div id="form-email" class="row">
-                 <div class="input-field col s12">
-                   <input id="email" type="email" class="validate">
-                   <label for="email" data-error="wrong" data-success="right">Email...</label>
-                 </div>
-              </div>
-
-                <!-- third row --->
-              <div id="form-feedback" class="row">
-                 <div class="input-field col s12">
-                    <textarea id="textarea1" class="materialize-textarea"></textarea>
-                    <label for="textarea1">Tell Me Something...</label>
+                <!-- Dishi App -->
+                <a href="http://bit.ly/1NsKwNp">
+                    <div id="dishi" class="col s4">
+                        <img src="main/assets/dishi.png" class="center-h">
                     </div>
-              </div>
+                </a>
 
-            <!-- fourth row --->
-              <div id="form-submit" class="row">
-                 <div class="input-field col s12 center-h">
-                     <button class="btn waves-effect waves-light" type="submit" name="action">Send
-                        <i class="material-icons right">send</i>
-                    </button>
+                <div class="col s8 descr">
+                    <p class="center-h heading">'Dishi' App</p>
+                    <p class ="center"> 'Dishi' is an app that brings together hungry customers who want to eat and aspiring chefs who will satisfy this hunger. </p>
                 </div>
-              </div>
-        </form>
-        </div>
-    </div> <!--- small container --->
-    </div> <!--contacts-content end --->
-
-    <!----------------------------------->
-    <!---- Footer----->
-    <div id="footer" class="row">
-        <div class="row">
-            <div id="social" class="col s6">
-                <h5>social media</h5>
-                <div>
-                    <p>twitter</p>
-                    <p>github</p>
-                    <p>facebook</p>
-                    <p>linkedIn</p>
-                </div>
-
-
             </div>
-            <div id="contacts" class="col s6">
-                <h5>contacts</h5>
-                <div>
-                    <p>Tel: +254 725 882 457</p>
-                    <p>Email: i.wanjugu@yahoo.com</p>
 
+        </div> <!-- portfolio content div -->
 
-                </div>
+    </div> <!-- round div end -->
 
-            </div>
+    </div>
+
+</div>
+
+<!--------------------------------------------------------------------->
+<!--- CONTACT PAGE -->
+<div id="contact_page">
+    <a href="#" class="cancel">&times;</a>
+
+    <!-- contact content -->
+    <div class="container row">
+
+    <div id="contact-sq" class="row sqDiv center-c bubble animated">
+        <div id="contact-title" class="row center-h">
+            <h3>
+                hi wanjugu !!!
+            </h3>
         </div>
 
-        <div class="row">
-            <div id="copyright" class="col s12">
-                 <p class="center-h">2015   |   &copy; Wanjugu</p>
-            </div>
+        <!--The contact form-->
+        <div id="contact-content" class="row">
+            <form id="post-form">
+
+            <p>
+                My name is
+                <input id="first-name" type="text" placeholder="first name">
+                <input id="last-name" type="text" placeholder="last name">
+                & my email is
+                <input id="email" type="text" placeholder="me@me.com">
+                . I want to tell you that
+            </p>
+
+            <p><textarea id="message" type="text" placeholder=":)"></textarea></p>
+
+            <p><input id="post-submit" type="submit" class="center-h"></p>
+
+            </form>
         </div>
-    </div><!--- End of Footer -->
-
-</div><!--contacts-page end --->
 
 
-</body>
+    </div>
 
-<!---------------------------------------------------------->
-<!-- Scripts -->
+    </div>
 
-<!-- demo js -->
-<script src="1-flipping-card-source/js/demo/demo.js"></script>
+</div>
 
-<!-- Photo Animations JQuery -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 
-		<script type="text/javascript">
-			$(function(){
+<!--------------------------------------------------------------------->
+<!--- SCRIPTS --->
 
-                $('.fadein img:gt(0)').hide();
-                setInterval(function(){
-                $('.fadein :first-child').fadeOut(5000)
-                .next('img').fadeIn(5000)
-                .end().appendTo('.fadein');},
-                7000);
+<!-- the form -->
+<script>
+Parse.initialize("IU7a7FRlt4XYkjop83ZeGjhGKw75WvTozxGQlALU", "A9l8Hay09r6OvWBh6GU4byFDzrGyNbX7ULAZBv1N");
 
-			});
+var Post = Parse.Object.extend("FormPost");
 
-		</script>
+//USING JQUERY ON FORM WITH PARSE
+//listening for the submit action on the form
+$("#post-form").submit(function(event){
+  event.preventDefault();
 
-<!-- demo js -->
-<script src="1-flipping-card-source/js/demo/demo.js"></script>
+      var firstname = $("#first-name").val();
+      var lastname = $("#last-name").val();
+      var email = $("#email").val();
+      var message = $("#message").val();
+
+      var newPost = new Post();
+      newPost.set("firstname", firstname);
+      newPost.set("lastname", lastname);
+      newPost.set("email", email);
+      newPost.set("message", message);
+
+
+      newPost.save({
+          success: function(){
+              $("#post-form").find('input[type=text]').val('');
+              $("#post-form").find('textarea[type=text]').val('');
+          },
+          error: function(error){
+              console.log("Error:"+error.message);
+          }
+    });
+});
+</script>
 
 <!--
- change active on scroll
+<script src="parallax/scripts/jquery.js"></script>
+<script src="parallax/deploy/jquery.parallax.js"></script>
 <script>
-    var sections = $('div')
-      , nav = $('nav-menu')
-      , nav_height = nav.outerHeight();
 
-    $(window).on('scroll', function () {
-      var cur_pos = $(this).scrollTop();
+// Yep, that's it!
+$('#scene').parallax();
 
-      sections.each(function() {
-        var top = $(this).offset().top - nav_height,
-            bottom = top + $(this).outerHeight();
-
-        if (cur_pos >= top && cur_pos <= bottom) {
-          nav.find('a').removeClass('active');
-          sections.removeClass('active');
-
-          $(this).addClass('active');
-          nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
-        }
-      });
-    });
 </script>
 -->
+</body>
 
-<!-- analytics -->
-<script>
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-34160351-1']);
-_gaq.push(['_trackPageview']);
-(function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-</script>
 
-<!------------------------------------------------>
 </html>
