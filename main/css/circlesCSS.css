@@ -36,7 +36,7 @@ html, body {
     line-height: 1;
     margin: 0;
     font-family: 'Poiret One', cursive;
-    background-color: black;
+    background-color:;
 }
 
 #home_page {
@@ -54,10 +54,22 @@ html, body {
     height:100%;
     min-height: 800px;
     position: relative;
-/*
+
+
     position:fixed;
     display:none;
-*/
+}
+
+#about_page{
+    opacity: 100%;
+}
+#portfolio_page {}
+#contact_page {}
+#random_page {}
+
+.container {
+    height: 100%;
+    margin: 0;
 }
 
 #home_page {
@@ -245,31 +257,19 @@ h3, h2 {
 }
 
 
-/*
-Div Animations
+/*Div Animations*/
 
 #about-sq, #portfolio-sq, #contact-sq, #random-sq {
     -webkit-animation:
-        pulse 3s linear 0s infinite
+        pulse 3s
     animation:
-        pulse 3s linear 0s infinite
+        pulse 3s
 }
-*/
 
 /*============================================================================= */
 
 /*--- ABOUT PAGE ----*/
 
-#about_page {
-    background-color:black;
-/*    opacity:0.6;*/
-
-}
-
-.container {
-    height: 100%;
-    margin: 0;
-}
 
 #about-sq {
     background-color:rgba(37, 172, 162, 0.75);
@@ -289,7 +289,7 @@ Div Animations
 
 #aboutme {
     text-align: center;
-    border: thin solid #8c4646;
+    border: thin solid #fff;
 }
 
 #aboutme-content p {
@@ -303,17 +303,13 @@ Div Animations
 
 /*--- PORTFOLIO PAGE ----*/
 
-#portfolio_page {
-    background-color:black;
-}
-
 #portfolio-sq {
     background-color:rgba(235, 67, 35, 0.75);
 }
 
 #portfolio-title, #portfolio-content {
-    margin-left: 3px;
-    top: 40px;
+    margin-left: 2px;
+    top: 60px;
     position: relative
 }
 
@@ -322,69 +318,81 @@ Div Animations
     height: 80px;
     position: relative;
     text-align: center;
-    border: thin solid #8c4646;
+    border: thin solid #fff;
 
 }
 
 #portfolio-content {
+    height: 480px;
     width: 100%;
     z-index: 30;
 }
+
+#portfolio-content .row {
+    height: 200px;
+    width: 550px;
+    position: relative;
+    top: 30px;
+    margin-left: 2px;
+
+}
+
 #portfolio-content p {
     position: relative;
-    width: 120px;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: center;
 }
 
-#portfolio-content .row {
-    height: 100px;
-    width: 330px;
-    position: relative;
-    top: 10%;
-    margin-left: 3px;
-
+#row2 {
+    margin-top: 30px;
 }
 
-#portfolio-content .row .s4 {
+#InsideOut, #dishi {
     position: relative;
     height: 100%;
-    width: 100px;
+    width: 200px;
     display: block;
-    border-radius: 30%;
+/*    overflow: hidden;*/
+}
+
+#InsideOut img {
+    margin-left: -10px;
+    height: 200px;
+    width: 200px;
+    border-radius: 10%;
     border-color: aliceblue;
     border-style: solid;
     border-width: thin;
     margin-right: 10px;
 }
 
-#InsideOut {
-    background-color: aliceblue;
+#dishi img {
+    height: 200px;
+    width: 123px;
+    border-radius: 5%;
+    border-color: aliceblue;
+    border-style: solid;
+    border-width: thin;
+    margin-right: 10px;
+
 }
 
-#InsideOut p{
-    color: coral;
+#portfolio-content .row .s8 {
+    width: 330px;
+    height: 100%;
+
+}
+
+.heading {
+    font-size: 1.3rem;
     font-weight: bold;
 }
-
-#portfolio-content .row .s4 p{
-    width: 100%;
-    top: 25%;
-    font-size: .9rem
-}
-
-
-
 
 
 /*============================================================================= */
 
 /*--- CONTACTS PAGE ----*/
-
-#contact_page {
-    background-color:black;
-}
 
 #contact-sq {
     background-color:rgba(95, 33, 203, 0.75);
@@ -395,7 +403,7 @@ Div Animations
     height: 80px;
     position: relative;
     text-align: center;
-    border: thin solid #8c4646;
+    border: thin solid #fff;
     top: 160px;
 
 }
@@ -465,9 +473,6 @@ input[type="submit"]{
 
 /*--- RANDOM PAGE ----*/
 
-#random_page {
-        background-color:black;
-}
 
 #random-sq {
         background-color:rgba(208, 57, 159, 0.75);

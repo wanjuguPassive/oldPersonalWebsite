@@ -19,7 +19,7 @@
     <script src="materialize/js/materialize.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="//www.parsecdn.com/js/parse-1.6.12.min.js"></script>
-    <script src="main/js/parseform.js"></script>
+
 </head>
 
 <body>
@@ -65,7 +65,8 @@
                     <div class="small circle three"></div>
 
                     <a href="#portfolio_page">
-                        <div id="portfolio" class="small squircle four">                             <div><h2 class="center-h">P</h2></div>
+                        <div id="portfolio" class="small squircle four">
+                            <div><h2 class="center-h">P</h2></div>
                             <div><p class="center-c">ortfolio</p></div>
                         </div>
                     </a>
@@ -73,7 +74,8 @@
                     <div class="small circle five"></div>
 
                     <a href="#contact_page">
-                        <div id="contacts" class="small squircle six">                               <div><h2 class="center-h">C</h2></div>
+                        <div id="contacts" class="small squircle six">
+                            <div><h2 class="center-h">C</h2></div>
                             <div><p class="center-c">ontact</p></div>
                         </div>
                     </a>
@@ -170,36 +172,41 @@
         </div>
 
         <div id="portfolio-content" class="row center-h">
-            <p class="center-h">HTML/CSS</p>
-            <div class="row center-h">
-                <div class="col s4"></div>
 
+
+            <div id="row1" class="row center-h">
                 <!--Inside Out Page-->
                 <a href="http://inside-out-landing-page.bitballoon.com/">
                     <div id="InsideOut" class="col s4">
-                    <p class ="center"> Inside Out</p>
+                        <img src="main/assets/insideout.png">
                     </div>
                 </a>
-                <div class="col s4"></div>
+
+                <div class="col s8 descr">
+                    <p class="center-h heading">'Inside Out' Landing Page</p>
+                    <p class ="center"> This is a mock landing page for one of my favourite animated movies - 'Inside Out'. The main mediums experimented upon in this project are colours, shapes and motion, all of which are used in the movie itself.</p>
+                </div>
             </div>
 
-            <p class="center-h">Pyhton/Django</p>
-            <div class="row center-h">
-                <div class="col s4"></div>
-                <div class="col s4"></div>
-                <div class="col s4"></div>
+
+            <div id="row2" class="row center-h">
+
+                <!-- Dishi App -->
+                <a href="http://bit.ly/1NsKwNp">
+                    <div id="dishi" class="col s4">
+                        <img src="main/assets/dishi.png" class="center-h">
+                    </div>
+                </a>
+
+                <div class="col s8 descr">
+                    <p class="center-h heading">'Dishi' App</p>
+                    <p class ="center"> 'Dishi' is an app that brings together hungry customers who want to eat and aspiring chefs who will satisfy this hunger. </p>
+                </div>
             </div>
 
-            <p class="center-h">Android</p>
-            <div class="row center-h">
-                <div class="col s4"></div>
-                <div class="col s4"></div>
-                <div class="col s4"></div>
-            </div>
+        </div> <!-- portfolio content div -->
 
-        </div> <!-- portfolio div -->
-
-    </div>
+    </div> <!-- round div end -->
 
     </div>
 
