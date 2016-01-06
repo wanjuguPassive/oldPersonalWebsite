@@ -469,15 +469,15 @@ input[type="text"]{
     border-bottom:1px solid #fff;
 }
 
-input[placeholder="me@me.com"] {
+input[placeholder="your@email.com"] {
     width: 160px;
 }
 
-input[placeholder="first name"], input[placeholder="last name"], input[placeholder="me@me.com"] {
+input[placeholder="first name"], input[placeholder="last name"], input[placeholder="your@email.com"] {
     font-size: 1rem;
     font-style: italic;
     text-align: center;
-    color: rgba(233, 124, 32, 0.75);
+    color: #fff;
 }
 
 textarea{

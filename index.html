@@ -270,20 +270,23 @@
 
         <!--The contact form-->
         <div id="contact-content" class="row">
-            <form id="post-form">
+
+
+            <form id="post-form" action="//formspree.io/i.wanjugu@yahoo.com"
+      method="POST">>
 
             <p>
                 My name is
-                <input id="first-name" type="text" placeholder="first name">
-                <input id="last-name" type="text" placeholder="last name">
+                <input id="first-name" name="firstname" type="text" placeholder="first name">
+                <input id="last-name" name="lastname"type="text" placeholder="last name">
                 & my email is
-                <input id="email" type="text" placeholder="me@me.com">
+                <input id="email" name="replyto"type="text" placeholder="your@email.com">
                 . I want to tell you that
             </p>
 
-            <p><textarea id="message" type="text" placeholder=":)"></textarea></p>
+            <p><textarea id="message" name="message" type="text" placeholder=":)"></textarea></p>
 
-            <p><input id="post-submit" type="submit" class="center-h"></p>
+            <p><input id="post-submit" value="Send" type="submit" class="center-h"></p>
 
             </form>
         </div>
@@ -300,6 +303,7 @@
 <!--- SCRIPTS --->
 
 <!-- the form -->
+<!--
 <script>
 Parse.initialize("IU7a7FRlt4XYkjop83ZeGjhGKw75WvTozxGQlALU", "A9l8Hay09r6OvWBh6GU4byFDzrGyNbX7ULAZBv1N");
 
@@ -333,6 +337,7 @@ $("#post-form").submit(function(event){
     });
 });
 </script>
+-->
 
 <!--
 <script src="parallax/scripts/jquery.js"></script>

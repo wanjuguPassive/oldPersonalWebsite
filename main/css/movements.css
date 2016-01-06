@@ -74,9 +74,11 @@
     margin-left: 40%;
 
     -webkit-animation:
-        birdrock 5s linear infinite;
+        unhide 9s ease-in,
+        birdrock 4s linear 8s infinite;
     animation:
-        birdrock 5s linear infinite;
+        unhide 9s ease-in,
+        birdrock 4s linear 8s infinite;
 }
 
 #butterfly {
@@ -86,9 +88,11 @@
     margin-left: 80%;
 
     -webkit-animation:
-        birdrock 1s linear infinite;
+        unhide 5s ease-in,
+        birdrock 1s linear 4s infinite;
     animation:
-        birdrock 1s linear infinite;
+        unhide 5s ease-in,
+        birdrock 1s linear 4s infinite;
 }
 
 #butterfly img {
@@ -104,9 +108,11 @@
     margin-left: 100%;
 
     -webkit-animation:
-        bounce2 2s linear infinite;
+        unhide 13s linear,
+        bounce2 2s linear 13s infinite;
     animation:
-        bounce2 2s linear infinite;
+        unhide 13s linear,
+        bounce2 2s linear 13s infinite;
 }
 #bird2 img {
     width: 150px;
