@@ -137,7 +137,25 @@ h3, h2 {
 }
 
 
+#outsides {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
 
+#outsides .s2 {
+    height: 100%;
+}
+
+.bird1 {
+    width: 70px;
+    -webkit-animation:
+        unhide 16s ease-in,
+        antispin 40s linear 13s infinite;
+    animation:
+        unhide 16s ease-in,
+        antispin 40s linear 13s infinite;
+}
 
 
 /*------------------------------------------------------------------------- */
