@@ -27,9 +27,21 @@ font-family: 'Shadows Into Light Two', cursive;
 /* =============================================================================
  The Body
 ============================================================================= */
+html,
+body,
+div,
+h1,
+p,
+a,
+video {
+  margin: 0;
+  padding: 0;
+}
+
 html, body {
-    height: 100%;
-    width: 100%;
+
+    width: auto;
+    height: auto;
     margin: 0;
     padding: 0;
     border: 0;
@@ -37,15 +49,21 @@ html, body {
     margin: 0;
     font-family: 'Poiret One', cursive;
     background-color:;
+/*
+    min-width: 100%;
+    min-height: 100%;
+*/
 }
+
 
 #home_page {
     top:0;
     left:0;
     width:100%;
     height:100%;
-    min-height: 100%;
+    min-height: 800px;
     position: relative;
+    z-index: 5;
 }
 #about_page, #portfolio_page, #contact_page, #random_page {
     top:0;
@@ -54,6 +72,7 @@ html, body {
     height:100%;
     min-height: 800px;
     position: relative;
+    z-index: 10;
 
 
     position:fixed;
@@ -72,13 +91,6 @@ html, body {
     margin: 0;
 }
 
-#home_page {
-    z-index: 5;
-}
-
-#about_page, #portfolio_page, #contact_page, #random_page {
-    z-index: 10;
-}
 
 h3, h2 {
     color: white;
@@ -135,7 +147,9 @@ h3, h2 {
 #home_page .bgimage {
     width: 1000px;
 /*    height: 100%;*/
-    margin-left: 30px
+    margin-left: 30px;
+    z-index: -5;
+    margin-bottom: 0;
 }
 
 #sides, #home-content {
@@ -146,20 +160,18 @@ h3, h2 {
 #outsides {
     height: 100%;
     width: 100%;
+    position: absolute;
     z-index: 0;
+}
+
+#outsides .s2, #outsides .s3 {
+    height: 100%;
 }
 
 #outsides .s2 {
     height: 100%;
 }
 
-.bird {
-    width: 180px;
-}
-
-.flower {
-    width: 100px;
-}
 
 
 /*------------------------------------------------------------------------- */
@@ -190,7 +202,7 @@ h3, h2 {
     height: 7rem;
     width: 7rem;
     font-size: 1.5rem;
-    top: .5rem;
+    top: 1rem;
     padding-top: .5em;
 }
 
@@ -218,7 +230,8 @@ h3, h2 {
 #about div p:hover, #about div p:active, #portfolio div p:hover, #contacts div p:hover, #random div p:hover {
     height: 30px;
     color: #fff;
-    top: 2.7rem;
+    font-weight: bold;
+    top: 3.2rem;
     transition: all 0.6s ease;
 }
 
@@ -295,6 +308,7 @@ h3, h2 {
 
 #about-sq {
     background-color:rgba(37, 172, 162, 0.75);
+    opacity: 100%;
 }
 
 /*--- Content ----*/

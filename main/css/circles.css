@@ -2,9 +2,9 @@
 
 .circle, .squircle {
   border-top: 0.1em solid rgba(255,255,255,0.4);
-  height: 10em;
+  height: 12em;
   position: absolute;
-  width: 10em;
+  width: 12em;
 }
 
 
@@ -62,8 +62,8 @@ Let’s add the CSS to position each of these circles. */
   width: 4em;
   height: 4em;
   left: calc(50% - 2em);
-  top: calc(50% - 22em);
-  transform-origin: 50% 22em;
+  top: calc(50% - 20em);
+  transform-origin: 50% 20em;
   box-shadow: 0 0.25em 0.5em rgba(0,0,0,0.2);
 }
 
@@ -104,11 +104,11 @@ Let’s add the CSS to position each of these circles. */
 .large.squircle {
   background: rgba(30, 7, 66, 0.65);
   border: none;
-  height: 10em;
-  width: 10em;
-  left: calc(50% - 5em);
+  height: 12em;
+  width: 12em;
+  left: calc(50% - 6em);
   position: absolute;
-  top: calc(50% - 5em);
+  top: calc(50% - 6em);
   transform: none;
 
 }
@@ -148,7 +148,7 @@ Let’s add the CSS to position each of these circles. */
 }
 
 #SmallShapes{
-    z-index: 10;
+    z-index: 15;
 }
 
 

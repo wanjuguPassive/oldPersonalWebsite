@@ -21,48 +21,130 @@
     }
 }
 
+/*Bounce Animation*/
 
-@keyframes unhide {
-  0% {
-    visibility: hidden;
-    opacity: 0;
-  }
-  25% {
-    visibility: hidden;
-    opacity: 0;
-  }
-  50% {
-    visibility: hidden;
-    opacity: 0;
-  }
-  75% {
-    visibility: hidden;
-    opacity: 0;
-  }
-  100% {
-    visibility: visible;
-    opacity: 1;
-  }
+@keyframes bounce2 {
+    0% {transform: translateY(0);}
+    25% {transform: translateY(15px);}
+    75% {transform: translateY(-15px);}
+    100% {transform: translateY(0px);}
+
 }
 
-
-
-
-
-@keyframes antispin {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
+@-webkit-keyframes bounce2 {
+    0% {-webkit-transform: translateY(0);}
+    25% {-webkit-transform: translateY(15px);}
+    75% {-webkit-transform: translateY(-15px);}
+    100% {-webkit-transform: translateY(0px);}
 }
 
-
-
+/*
+ * Adding the animation to our element
+*/
+/*
+.bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+}
+*/
+/*
 .bird {
     -webkit-animation:
-        birdrock 16s linear infinite;
+        birdrock 5s linear infinite;
     animation:
-       birdrock 16s linear infinite;
+        birdrock 5s linear infinite;
 }
+*/
+
+.bird {
+    width: 100px;
+    position: absolute;
+}
+
+.flower {
+    width: 100px;
+    position: absolute;
+}
+
+/*Individual elements*/
+#bird1 {
+    width: 100px;
+    height: 100px;
+    margin-top: 30%;
+    margin-left: 40%;
+
+    -webkit-animation:
+        birdrock 5s linear infinite;
+    animation:
+        birdrock 5s linear infinite;
+}
+
+#butterfly {
+    width: 100px;
+    height: 100px;
+    margin-top: 120%;
+    margin-left: 80%;
+
+    -webkit-animation:
+        birdrock 1s linear infinite;
+    animation:
+        birdrock 1s linear infinite;
+}
+
+#butterfly img {
+    width: 40px;
+
+}
+
+
+#bird2 {
+    width: 130px;
+    height: 130px;
+    margin-top: -60%;
+    margin-left: 100%;
+
+    -webkit-animation:
+        bounce2 2s linear infinite;
+    animation:
+        bounce2 2s linear infinite;
+}
+#bird2 img {
+    width: 150px;
+
+}
+
+#bird3  {
+    width: 100px;
+    height: 100px;
+    margin-top: 32%;
+    margin-left: 120%;
+
+    -webkit-animation:
+        birdrock 10s linear infinite;
+    animation:
+        birdrock 10s linear infinite;
+}
+
+/*
+#bird3 img {
+    width: 150px;
+    height: 130px;
+}
+*/
+
+
+#flower1 {
+    width: 70px;
+    height: 160px;
+    margin-top: 250%;
+    margin-left: 70%;
+}
+
+#flower2 {
+    width: 100px;
+    height: 160px;
+    margin-top: -55%;
+    margin-left: 0%;
+}
+
+
