@@ -1,0 +1,68 @@
+/*Bird animations*/
+
+/*birdrock */
+
+@keyframes birdrock {
+    0% {
+        transform: rotateZ(0);
+    }
+    25% {
+        transform: rotateZ(25deg);
+    }
+    50% {
+        transform: rotateZ(0)
+    }
+    75% {
+        transform: rotateZ(25deg)
+    }
+
+    100% {
+        transform: rotateZ(0);
+    }
+}
+
+
+@keyframes unhide {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  25% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  50% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  75% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+
+
+
+
+@keyframes antispin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+
+
+.bird {
+    -webkit-animation:
+        birdrock 16s linear infinite;
+    animation:
+       birdrock 16s linear infinite;
+}

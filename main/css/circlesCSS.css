@@ -132,6 +132,12 @@ h3, h2 {
     overflow: hidden;
 }
 
+#home_page .bgimage {
+    width: 1000px;
+/*    height: 100%;*/
+    margin-left: 30px
+}
+
 #sides, #home-content {
     height: 100%;
 }
@@ -147,14 +153,12 @@ h3, h2 {
     height: 100%;
 }
 
-.bird1 {
-    width: 70px;
-    -webkit-animation:
-        unhide 16s ease-in,
-        antispin 40s linear 13s infinite;
-    animation:
-        unhide 16s ease-in,
-        antispin 40s linear 13s infinite;
+.bird {
+    width: 180px;
+}
+
+.flower {
+    width: 100px;
 }
 
 
