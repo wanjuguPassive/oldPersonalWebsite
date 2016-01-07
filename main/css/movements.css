@@ -21,7 +21,7 @@
     }
 }
 
-/*Bounce Animation*/
+/*bird Bounce Animation*/
 
 @keyframes bounce2 {
     0% {transform: translateY(0);}
@@ -38,23 +38,21 @@
     100% {-webkit-transform: translateY(0px);}
 }
 
-/*
- * Adding the animation to our element
-*/
-/*
-.bounce {
-    -webkit-animation-name: bounce;
-    animation-name: bounce;
+/*cloud Bounce Animation*/
+@keyframes cloud-bounce {
+    0% {transform: translateY(0);}
+    25% {transform: translateY(5px);}
+    75% {transform: translateY(-5px);}
+    100% {transform: translateY(0px);}
+
 }
-*/
-/*
-.bird {
-    -webkit-animation:
-        birdrock 5s linear infinite;
-    animation:
-        birdrock 5s linear infinite;
+
+@-webkit-keyframes cloud-bounce {
+    0% {-webkit-transform: translateY(0);}
+    25% {-webkit-transform: translateY(5px);}
+    75% {-webkit-transform: translateY(-5px);}
+    100% {-webkit-transform: translateY(0px);}
 }
-*/
 
 .bird {
     width: 100px;
@@ -65,6 +63,8 @@
     width: 100px;
     position: absolute;
 }
+
+/*-------------------------------------------------------*/
 
 /*Individual elements*/
 #bird1 {
@@ -138,19 +138,78 @@
 }
 */
 
+/*-------------------------------------------------------*/
 
-#flower1 {
-    width: 70px;
-    height: 160px;
-    margin-top: 250%;
-    margin-left: 70%;
+/*Clouds*/
+#cloud-menu {
+    -webkit-animation:
+        unhide 4s linear,
+        cloud-bounce 6s linear 4s infinite;
+    animation:
+        unhide 4s linear,
+        cloud-bounce 6s linear 4s infinite;
+
 }
-
-#flower2 {
-    width: 100px;
-    height: 160px;
-    margin-top: -55%;
+#cloud1 {
+    width: 300px;
+    margin-top: 20%;
     margin-left: 0%;
+    z-index: 40;
 }
+
+#cloud-text {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin-top: -45%;
+    margin-left: 40%;
+    text-align: center;
+    z-index: 41;
+
+    padding-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+#cloud2 {
+    width: 200px;
+    margin-top: -120%;
+    margin-bottom: 40%;
+
+    margin-left: 0%;
+    z-index: 39;
+
+     -webkit-animation:
+        cloud-bounce 4s linear infinite;
+    animation:
+        cloud-bounce 4s linear infinite;
+
+}
+#cloud3 {
+    width: 200px;
+    margin-top: -150%;
+    margin-bottom: 30%;
+    margin-left: -30%;
+    z-index: 38;
+
+     -webkit-animation:
+        unhide 2s linear,
+        cloud-bounce 3s linear 2s infinite;
+    animation:
+        unhide 2s linear,
+        cloud-bounce 3s linear 2s infinite;
+
+}
+
+/*
+#cloud4 {
+    width: 200px;
+    margin-top: -150%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    z-index: 38;
+}
+*/
 
 
