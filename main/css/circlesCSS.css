@@ -39,9 +39,10 @@ video {
 }
 
 html, body {
-
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
     margin: 0;
     padding: 0;
     border: 0;
@@ -49,34 +50,31 @@ html, body {
     margin: 0;
     font-family: 'Poiret One', cursive;
     background-color:;
-/*
-    min-width: 100%;
-    min-height: 100%;
-*/
-}
 
+}
 
 #home_page {
     top:0;
     left:0;
-    width:100%;
-    height:100%;
-    min-height: 800px;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
     position: relative;
     z-index: 5;
 }
+
 #about_page, #portfolio_page, #contact_page, #random_page {
     top:0;
     left:0;
     width:100%;
     height:100%;
-    min-height: 800px;
-    position: relative;
+    min-height: 100%;
+/*    position: relative;*/
     z-index: 10;
-
 
     position:fixed;
     display:none;
+
 }
 
 #about_page{
@@ -131,8 +129,8 @@ h3, h2 {
 }
 
 #large_circles, #small_shapes, #content, #title {
-/*    position: absolute;*/
-/*    top: 30%;*/
+  position: absolute;*/
+  top: 30%;*/
 
 }
 
@@ -284,8 +282,8 @@ h3, h2 {
 
 /*Circle Div*/
 .sqDiv {
-    height: 730px;
-    width: 730px;
+    height: 700px;
+    width: 700px;
     border-radius: 50%;
     overflow: hidden;
     margin-left: 3px;
@@ -308,7 +306,7 @@ h3, h2 {
 
 #about-sq {
     background-color:rgba(37, 172, 162, 0.75);
-    opacity: 100%;
+    opacity: 1;
 }
 
 /*--- Content ----*/
@@ -328,10 +326,14 @@ h3, h2 {
     border: thin solid #fff;
 }
 
+#about-content {}
+
 #aboutme-content p {
     font-size: 1.6em;
-/*    font-weight: bold;*/
+    font-weight: bold;
     color:white;
+    letter-spacing: 1.2px;
+    text-align: center;
 }
 
 
@@ -368,20 +370,26 @@ h3, h2 {
     height: 200px;
     width: 550px;
     position: relative;
-    top: 30px;
+    top: 10px;
     margin-left: 2px;
 
 }
 
-#portfolio-content p {
+.heading {
+    font-style: italic
+}
+
+.heading, .description {
     position: relative;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     text-align: center;
+    letter-spacing: 1.1px;
+    font-weight: bold;
 }
 
 #row2 {
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 #InsideOut, #dishi {
@@ -394,8 +402,8 @@ h3, h2 {
 
 #InsideOut img {
     margin-left: -10px;
-    height: 200px;
-    width: 200px;
+    height: 180px;
+    width: 180px;
     border-radius: 10%;
     border-color: aliceblue;
     border-style: solid;
@@ -417,13 +425,11 @@ h3, h2 {
 #portfolio-content .row .s8 {
     width: 330px;
     height: 100%;
+    text-align: center;
 
 }
 
-.heading {
-    font-size: 1.3rem;
-    font-weight: bold;
-}
+
 
 
 /*============================================================================= */
@@ -456,8 +462,8 @@ h3, h2 {
     padding: 0px 50px 15px;
     margin-top:20px;
     border-radius: 6px;
-
-    font-size: 1.3rem;
+    font-weight: bold;
+    font-size: 1.4rem;
 
 }
 
