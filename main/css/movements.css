@@ -141,7 +141,7 @@
 /*-------------------------------------------------------*/
 
 /*Clouds*/
-#cloud-menu {
+.cloud-menu {
     -webkit-animation:
         unhide 4s linear,
         cloud-bounce 6s linear 4s infinite;
@@ -150,21 +150,21 @@
         cloud-bounce 6s linear 4s infinite;
 
 }
-#cloud1 {
+.cloud1 {
     width: 300px;
     margin-top: 20%;
     margin-left: 0%;
     z-index: 40;
 }
 
-#cloud-text {
+.cloud-text {
     position: relative;
     height: 100px;
     width: 100px;
     margin-top: -45%;
     margin-left: 40%;
     text-align: center;
-    z-index: 41;
+    z-index: 100;
 
     padding-top: 20px;
     font-size: 1.2rem;
@@ -172,7 +172,7 @@
 }
 
 
-#cloud2 {
+.cloud2 {
     width: 200px;
     margin-top: -120%;
     margin-bottom: 40%;
@@ -186,7 +186,7 @@
         cloud-bounce 4s linear infinite;
 
 }
-#cloud3 {
+.cloud3 {
     width: 200px;
     margin-top: -150%;
     margin-bottom: 30%;
