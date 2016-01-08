@@ -56,7 +56,7 @@
 
 .bird {
     width: 100px;
-    position: absolute;
+/*    position: absolute;*/
 }
 
 .flower {
@@ -70,8 +70,9 @@
 #bird1 {
     width: 100px;
     height: 100px;
-    margin-top: 30%;
-    margin-left: 40%;
+    margin-top: 0%;
+    margin-left: 0%;
+    position: absolute;
 
     -webkit-animation:
         unhide 9s ease-in,
@@ -141,7 +142,26 @@
 /*-------------------------------------------------------*/
 
 /*Clouds*/
-.cloud-menu {
+
+#clouds {
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    z-index: 30;
+}
+
+.cloud-menu, .cloud-text, .cloud2, .cloud3 {
+    position: relative;
+}
+
+.cloud-menu { /*cloud1 and cloud-text*/
+    width: 300px;
+    height: 170px;
+    margin-left: 10%;
+    margin-top: 20%;
+
+    z-index: 100;
+
     -webkit-animation:
         unhide 4s linear,
         cloud-bounce 6s linear 4s infinite;
@@ -152,17 +172,14 @@
 }
 .cloud1 {
     width: 300px;
-    margin-top: 20%;
-    margin-left: 0%;
     z-index: 40;
 }
 
 .cloud-text {
-    position: relative;
     height: 100px;
     width: 100px;
-    margin-top: -45%;
-    margin-left: 40%;
+    margin-top: -140px;
+    margin-left: 110px;
     text-align: center;
     z-index: 100;
 
@@ -188,9 +205,9 @@
 }
 .cloud3 {
     width: 200px;
-    margin-top: -150%;
-    margin-bottom: 30%;
-    margin-left: -30%;
+    margin-top: -50%;
+    margin-bottom: 25%;
+    margin-left: -20%;
     z-index: 38;
 
      -webkit-animation:
