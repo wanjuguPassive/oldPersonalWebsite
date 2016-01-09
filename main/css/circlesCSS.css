@@ -119,26 +119,6 @@ h3, h2 {
     position: absolute;
 }
 
-/*------------ Parallax ------------*/
-#scene {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-}
-
-.layer {
-    height: 700px;
-    width: 700px;
-    position: fixed;
-    margin-top: 5%
-}
-
-#large_circles, #small_shapes, #content, #title {
-  position: absolute;*/
-  top: 30%;*/
-
-}
-
 
 /*============================================================================= */
 

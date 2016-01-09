@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="main/css/animate.css">
     <link rel="stylesheet" href="main/css/bubble.css">
     <link rel="stylesheet" href="main/css/movements.css">
+    <link rel="stylesheet" href="main/css/parallax.css">
     <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css" />
 
     <!-- Scripts -->
@@ -36,24 +37,39 @@
 
         <!--clouds-->
         <div class="col s2">
+
+            <ul id="scene" class="scene">
+
+            <li class="layer cloud-layer" data-depth="0.20">
             <div id="clouds">
-                <div class="cloud-menu">
-                    <img class="cloud1" src="main/assets/cloud1.png">
-                    <div class="cloud-text">
-                        <a href="#about_page"><p>about</p></a>
-                        <a href="#portfolio_page"><p>portfolio</p></a>
-                        <a href="#contact_page"><p>contact</p></a>
-                    </div>
+                <ul id="scene" class="scene">
 
-                </div>
+                    <li class="layer cloud-layer" data-depth="0.00">
+                        <div class="cloud-menu">
+                            <img class="cloud1" src="main/assets/cloud1.png">
+                            <div class="cloud-text">
+                                <a href="#about_page"><p>about</p></a>
+                                <a href="#portfolio_page"><p>portfolio</p></a>
+                                <a href="#contact_page"><p>contact</p></a>
+                            </div>
+                        </div>
+                    </li>
 
-                <div>
-                    <img class="cloud2" src="main/assets/greencloud.png">
-                </div>
-                <div>
-                    <img class="cloud3" src="main/assets/greencloud.png">
-                </div>
+                    <li class="layer cloud-layer" data-depth="0.00">
+                        <div>
+                            <img class="cloud2" src="main/assets/greencloud.png">
+                        </div>
+                    </li>
+
+                    <li class="layer cloud-layer" data-depth="0.00">
+                        <div>
+                            <img class="cloud3" src="main/assets/greencloud.png">
+                        </div>
+                    </li>
+
+                </ul>
             </div>
+            </li>
 
         </div>
 
@@ -90,7 +106,7 @@
             <ul id="scene" class="scene">
 
                 <!--larger circles -->
-                <li class="layer center-h" data-depth="0.00">
+                <li class="layer circles-layer center-h" data-depth="0.00">
                 <span id="large_circles" class="large-circles animated">
                     <div class="large circle one"></div>
                     <div class="large circle two"></div>
@@ -104,7 +120,7 @@
                 </li>
 
                 <!--smaller circles -->
-                <li id="SmallShapes" class="layer center-h" data-depth="1.00">
+                <li id="SmallShapes" class="layer circles-layer center-h" data-depth="1.00">
                 <span id="small_shapes" class="small-shapes animated">
 
                     <div class="small circle one"></div>
@@ -149,7 +165,7 @@
                 </li>
 
                 <!--the content ones-->
-                <li class="layer center-h" data-depth="0.00">
+                <li class="layer circles-layer center-h" data-depth="0.00">
                     <span id="content" class="content-squircle animated">
                         <div class="large squircle one"></div>
                     </span>
@@ -319,6 +335,17 @@
 <!--------------------------------------------------------------------->
 <!--- SCRIPTS --->
 
+<!-- PARALLAX EFFECT -->
+<script src="parallax/scripts/jquery.js"></script>
+<script src="parallax/deploy/jquery.parallax.js"></script>
+<script>
+
+// Yep, that's it!
+$('#scene').parallax();
+
+</script>
+
+
 <!-- the form -->
 <!--
 <script>
@@ -356,16 +383,7 @@ $("#post-form").submit(function(event){
 </script>
 -->
 
-<!--
-<script src="parallax/scripts/jquery.js"></script>
-<script src="parallax/deploy/jquery.parallax.js"></script>
-<script>
 
-// Yep, that's it!
-$('#scene').parallax();
-
-</script>
--->
 </body>
 
 

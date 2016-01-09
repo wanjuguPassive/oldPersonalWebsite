@@ -151,6 +151,13 @@ Let’s add the CSS to position each of these circles. */
     z-index: 15;
 }
 
+#large_circles, #small_shapes, #content, #title {
+  position: absolute;
+/*  top: 30%;*/
+
+}
+
+/*============================================================================= */
 
 /*ROTATING THE CIRCLES*/
 /*First we position these span elements so that they don’t break the layout.*/
