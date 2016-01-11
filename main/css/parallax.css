@@ -16,7 +16,6 @@
     height: 700px;
     width: 700px;
     position: fixed;
-
     margin-top: 5%
 
 }
@@ -27,5 +26,9 @@
     position: fixed;
 
 
+}
+
+#cloud-menu-layer {
+    z-index: 1000;
 }
 

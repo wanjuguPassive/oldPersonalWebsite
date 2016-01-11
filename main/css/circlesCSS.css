@@ -222,10 +222,12 @@ h3, h2 {
 }
 
 #about:hover, #portfolio:hover, #contacts:hover, #random:hover{
-    width: 7em;
-    height: 7em;
-    top: calc(50% - 27em);
-    transform-origin: 50% 27em;
+    width: 6em;
+    height: 6em;
+/*
+    top: calc(50% - 7em);
+    transform-origin: 50% 7em;
+*/
     transition: all 0.6s ease;
 
 }
