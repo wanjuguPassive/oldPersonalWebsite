@@ -235,19 +235,41 @@ h3, h2 {
 /*------------------------------------------------------------ */
 /*popup divs*/
 
-.cancel {
+#close-about, #close-portfolio, #close-contact {
     display:block;
     position:absolute;
-    top:3px; right:2px;
-    background:rgb(245,245,245);
-    color:black;
+    color:white;
     height:30px;
     width:35px;
     font-size:30px;
     text-decoration:none;
     text-align:center;
     font-weight:bold;
+
+    z-index: 50;
 }
+
+
+#close-about{
+    margin-left: 458px;
+    margin-top: 200px;
+}
+
+#close-about:hover, #close-portfolio:hover, #close-contact:hover {
+    background:rgb(245,245,245);
+    color:black;
+}
+
+#close-portfolio{
+    margin-left: 467px;
+    margin-top: 60px;
+}
+
+#close-contact{
+    margin-left: 454px;
+    margin-top: 160px;
+}
+
 
 #about_page:target {
     display:block;
