@@ -73,11 +73,13 @@ html, body {
     width:100%;
     height:100%;
     min-height: 800px;
-/*    position: relative;*/
+    position: relative;
     z-index: 10;
 
+/*
     position:fixed;
     display:none;
+*/
 
 }
 
@@ -157,9 +159,6 @@ h3, h2 {
 }
 
 
-
-
-
 /*------------------------------------------------- */
 /*HOVER EFFECTS*/
 /* Pausing Animation on hover */
@@ -235,7 +234,7 @@ h3, h2 {
 /*------------------------------------------------------------ */
 /*popup divs*/
 
-#close-about, #close-portfolio, #close-contact {
+#close-about, #close-portfolio, #close-contact, #close-thanks {
     display:block;
     position:absolute;
     color:white;
@@ -526,8 +525,36 @@ input[type="submit"]{
 
 /*--- RANDOM PAGE ----*/
 
-
 #random-sq {
         background-color:rgba(208, 57, 159, 0.75);
+}
+
+#contact-response {
+    height: 300px;
+    width: 500px;
+    top: 200px;
+}
+
+#contact-response .s2, #contact-response .s8 {
+    height: 100%;
+}
+
+#thank-you {
+    text-align: center;
+    border: thin solid #fff;
+}
+
+#random-content {
+    height: 200px;
+    width: 100%;
+    padding-top: 70px;
+}
+
+#random-content p {
+    font-size: 1.6em;
+    font-weight: bold;
+    color:white;
+    letter-spacing: 1.2px;
+    text-align: center;
 }
 

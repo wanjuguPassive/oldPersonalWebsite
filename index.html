@@ -189,8 +189,6 @@
 <!--- ABOUT PAGE -->
 <div id="about_page">
 
-<!--    <a href="#" id="close-about" class="cancel">&times;</a>-->
-
     <!-- about content -->
     <div id="about-content" class="container row">
 
@@ -301,23 +299,36 @@
         <div id="contact-content" class="row">
 
 
-            <form id="post-form" action="//formspree.io/i.wanjugu@yahoo.com"
-      method="POST">
+            <form id="post-form" method="POST">
 
             <p>
+                <!--Subject - so as to recognize this as contact from website activity-->
+                <input type="hidden" name="_subject" value="Website Contact" />
                 My name is
                 <input id="first-name" name="firstname" type="text" placeholder="first name">
                 <input id="last-name" name="lastname"type="text" placeholder="last name">
                 & my email is
                 <input id="email" name="replyto"type="text" placeholder="your@email.com">
+
                 . I want to tell you that
             </p>
 
             <p><textarea id="message" name="message" type="text" placeholder=":)"></textarea></p>
-
+                <!--to avoid spam-->
+                <input type="text" name="_gotcha" style="display:none" />
             <p><input id="post-submit" value="Send" type="submit" class="center-h"></p>
 
+<!--                Redirecting to 'thanks' page-->
+                <input type="hidden" name="_next" value="//iwanjugu.github.io/thanks.html" />
+
+
             </form>
+
+            <!--For security Purposes -->
+            <script>
+                var contactform =  document.getElementById('post-form');
+                contactform.setAttribute('action', '//formspree.io/' + 'i.wanjugu' + '@' + 'yahoo' + '.' + 'com');
+            </script>
         </div>
 
 
