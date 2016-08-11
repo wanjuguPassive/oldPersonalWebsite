@@ -1,29 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Slabo+27px|Open+Sans:400,300,300italic,400italic,600,600italic);
-
-@import url(https://fonts.googleapis.com/css?family=Poiret+One|Indie+Flower|Shadows+Into+Light|Josefin+Sans:400,600,600italic,700,400italic|Architects+Daughter|Kaushan+Script|Rock+Salt|Shadows+Into+Light+Two);
-
-/*
-
-font-family: 'Poiret One', cursive;
-
-font-family: 'Indie Flower', cursive;
-
-font-family: 'Shadows Into Light', cursive;
-
-font-family: 'Josefin Sans', sans-serif;
-
-font-family: 'Architects Daughter', cursive;
-
-font-family: 'Kaushan Script', cursive;
-
-font-family: 'Rock Salt', cursive;
-
-font-family: 'Shadows Into Light Two', cursive;
-
-*/
-@import url(https://fonts.googleapis.com/css?family=Cookie);
-/* font-family: 'Cookie', cursive; */
-
 /* =============================================================================
  The Body
 ============================================================================= */
@@ -48,9 +22,28 @@ html, body {
     border: 0;
     line-height: 1;
     margin: 0;
-    font-family: 'Poiret One', cursive;
+/*    font-family: 'Dosis', sans-serif;*/
+    font-family: 'Poiret One', cursive !important;
     background-color:;
+}
 
+/* Small only */
+    @media screen and (max-width: 39.9375em) {
+        html, body {
+            font-size: .9rem;
+        }
+    }
+
+    /* Medium only */
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+        html, body {
+            font-size: .95rem;
+        }
+    }
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poiret One', cursive !important;
 }
 
 #home_page {
@@ -58,6 +51,7 @@ html, body {
     left:0;
     height: 100%;
     width: 100%;
+/*    min-width: 800px;*/
     min-height: 600px;
     position: relative;
 /*    z-index: 5;*/
@@ -127,36 +121,89 @@ h3, h2 {
 /*--- HOME PAGE ----*/
 #home_page {
     overflow: hidden;
+    height: 100vh;
+    min-height: 800px;
 }
 
-#home_page .bgimage {
-    width: 950px;
-    margin-left: 30px;
-    z-index: -5;
-    margin-top: 1px;
+#images, #cloud-left, #home-content {
     position: absolute;
-}
-
-#sides, #home-content {
+    width: 100%;
     height: 100%;
+    padding: 0 !important;
+    margin: 0 auto;
 }
 
+/*------------------*/
+/*Images*/
+#images {
+    z-index: -5;
+}
 
-#outsides {
+#images>div {
+    height: 100%;
+    position: relative;
+}
+
+#images>div #tree, #images #birds {
+    position: absolute;
+    height: 100%;
+/*    width: 100%;*/
+}
+
+#images #tree {
     height: 100%;
     width: 100%;
+}
+
+#images #tree {
+    text-align: center;
+}
+
+#images #tree img {
+    width: 90%;
+    margin-right: -5rem;
+}
+
+/*tree*/
+
+/*birds*/
+#images #birds {
     position: absolute;
-    z-index: 0;
+    height: 100%;
+    width: 100%;
 }
 
-#outsides .s2, #outsides .s8 {
-    height: 100%;
+
+/*------------------*/
+#cloud-left {
+    z-index: 100;
 }
 
-#outsides .s2 {
-    height: 100%;
-    z-index: 30;
+
+
+#cloud-left>div {
+    width: 420px;
 }
+
+    /* Small only */
+    @media screen and (max-width: 39.9375em) {}
+
+    /* Medium and up */
+    @media screen and (min-width: 40em) {}
+
+    /* Medium only */
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+        #cloud-left>div {
+            max-width: 400px;
+        }
+    }
+
+/*------------------*/
+#home-content  {
+    z-index: 50;
+}
+
+
 
 
 /*------------------------------------------------- */
@@ -187,29 +234,29 @@ h3, h2 {
     height: 7rem;
     width: 7rem;
     font-size: 1.5rem;
-    top: 1rem;
-    padding-top: .5em;
+    top: 1.2rem;
+/*    padding-top: .5em;*/
 }
 
 #about div p {
     padding-left: 1.35em;
-    color: rgba(37, 172, 162, 0.75);
+    color: rgba(37, 172, 162, 0.85);
 }
 
 #portfolio div p {
     padding-left: .8em;
-    color: rgba(235, 67, 35, 0.75);
+    color: rgba(235, 67, 35, 0.85);
 }
 
 #contacts div p {
     padding-left: 1em;
-    color: rgba(95, 33, 203, 0.75);
+    color: rgba(95, 33, 203, 0.85);
 
 }
 
 #random div p {
     padding-left: .9em;
-    color: rgba(208, 57, 159, 0.75);
+    color: rgba(208, 57, 159, 0.85);
 }
 
 #about div p:hover, #about div p:active, #portfolio div p:hover, #contacts div p:hover, #random div p:hover {
@@ -326,7 +373,7 @@ h3, h2 {
     top: 200px;
 }
 
-#mid-row .s2, #mid-row .s8 {
+#mid-row .small-2, #mid-row .small-8 {
     height: 100%;
 }
 
@@ -547,6 +594,10 @@ input[type="submit"]{
 }
 
 #contact-response .s2, #contact-response .s8 {
+    height: 100%;
+}
+
+#contact-response .small-2, #contact-response .small-8 {
     height: 100%;
 }
 

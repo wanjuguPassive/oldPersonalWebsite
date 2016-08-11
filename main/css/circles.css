@@ -3,8 +3,9 @@
 .circle, .squircle {
   border-top: 0.1em solid rgba(255,255,255,0.4);
   height: 12em;
-  position: absolute;
   width: 12em;
+  position: absolute;
+
 }
 
 

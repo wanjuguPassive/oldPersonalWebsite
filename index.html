@@ -2,11 +2,27 @@
 <html lang="en">
 
 <head>
-    <title>Wanjugu</title>
+    <title>::Wanjugu::</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width" initial-scale: 1.0, user-scalable=0> <!--opitimized for mobile-->
     <link rel="shortcut icon" href="../favicon.ico">
+
+    <!----------------------------------------->
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/nlf77ygpngai40g/normalize.css?raw=1">
+
+    <!-- Foundation -->
+    <link rel="stylesheet" href="https://www.dropbox.com/s/f9dd9szfzl0owqy/foundation.min.css?raw=1">
+
+    <!-- custom -styles -->
+    <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/wgacgxselcsyfvh/custom_styles.css?raw=1">
+
+
     <!--- css -->
     <link rel="stylesheet" href="main/css/circlesCSS.css">
     <link rel="stylesheet" href="main/css/circles.css">
@@ -14,67 +30,31 @@
     <link rel="stylesheet" href="main/css/bubble.css">
     <link rel="stylesheet" href="main/css/movements.css">
     <link rel="stylesheet" href="main/css/parallax.css">
-    <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css" />
 
+    <!----------------------------------------->
     <!-- Scripts -->
-    <script src="materialize/js/materialize.js"></script>
-    <script src="materialize/js/materialize.min.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="//www.parsecdn.com/js/parse-1.6.12.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 </head>
 
 <body>
 
 <!--------------------------------------------------------------------->
-
 <!--- HOME PAGE -->
 <div id="home_page">
-    <img class ="center-h bgimage" src="main/assets/cherry-blossom-smallest.png">
 
-    <!-- The decorations -->
-    <div id="outsides" class="row">
+    <!---------------------------------->
+    <!-- Images -->
+    <div id="images" class="expanded row f-center">
+<!--        <div class="large-2"></div>-->
+        <div class="small-12 medium-12 large-8 end">
 
-        <!--clouds-->
-        <div class="col s2">
-
-            <ul id="scene" class="scene">
-
-            <li class="layer cloud-layer" data-depth="0.20">
-            <div id="clouds">
-                <ul id="scene" class="scene">
-
-                    <li id="cloud-menu-layer"class="layer cloud-layer" data-depth="0.00">
-                        <div class="cloud-menu">
-                            <img class="cloud1" src="main/assets/cloud1.png">
-                            <div class="cloud-text">
-                                <a href="#about_page"><p>about</p></a>
-                                <a href="#portfolio_page"><p>portfolio</p></a>
-                                <a href="#contact_page"><p>contact</p></a>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="layer cloud-layer" data-depth="0.00">
-                        <div>
-                            <img class="cloud2" src="main/assets/greencloud.png">
-                        </div>
-                    </li>
-
-                    <li class="layer cloud-layer" data-depth="0.00">
-                        <div>
-                            <img class="cloud3" src="main/assets/greencloud.png">
-                        </div>
-                    </li>
-
-                </ul>
+            <!-- tree -->
+            <div id="tree" class="f-center">
+                <img class="bgimage" src="main/assets/cherry-blossom-smallest.png">
             </div>
-            </li>
 
-        </div>
-
-        <!--birds-->
-        <div class="col s8">
+            <!--birds-->
             <div id="birds" class="center-h">
                 <div id="bird1" class="bird-div">
                     <img  class="bird" src="main/assets/bird.png">
@@ -91,18 +71,53 @@
                 <div id="bird2" class="bird-div">
                     <img class="bird" src="main/assets/bird2.png">
                 </div>
-
-            </div>
+            </div> <!--birds end -->
         </div>
 
-        <div class="col s2"> </div>
     </div>
 
+    <!---------------------------------->
+    <!-- Clouds -->
+    <div id="cloud-left" class="expanded row">
+        <div class="small-12 medium-4 large-3 columns end">
+            <ul id="scene" class="scene">
+                <li class="layer cloud-layer" data-depth="0.20">
+                <div id="clouds">
+                    <ul id="scene" class="scene">
+                        <li id="cloud-menu-layer"class="layer cloud-layer" data-depth="0.00">
+                            <div class="cloud-menu">
+                                <img class="cloud1" src="main/assets/cloud1.png">
+                                <div class="cloud-text">
+                                    <a href="#about_page"><p>about</p></a>
+                                    <a href="#portfolio_page"><p>portfolio</p></a>
+                                    <a href="#contact_page"><p>contact</p></a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="layer cloud-layer" data-depth="0.00">
+                            <div>
+                                <img class="cloud2" src="main/assets/greencloud.png">
+                            </div>
+                        </li>
+
+                        <li class="layer cloud-layer" data-depth="0.00">
+                            <div>
+                                <img class="cloud3" src="main/assets/greencloud.png">
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <!-- home content -->
     <div id="home-content" class="container row center-h">
 
-        <div class="col s12">
+        <div class="small-12 columns">
             <ul id="scene" class="scene">
 
                 <!--larger circles -->
@@ -172,7 +187,7 @@
                     <span id="title" class="animated">
                     <div class="large squircle two ">
                         <div>
-                            <a href="#about_page">
+                            <a href="#">
                             <h3 class="center-h">WANJUGU</h3>
                             </a>
                         </div>
@@ -327,7 +342,7 @@
             <!--For security Purposes -->
             <script>
                 var contactform =  document.getElementById('post-form');
-                contactform.setAttribute('action', '//formspree.io/' + 'i.wanjugu' + '@' + 'yahoo' + '.' + 'com');
+                contactform.setAttribute('action', '//formspree.io/' + 'wanjugu.passive' + '@' + 'gmail' + '.' + 'com');
             </script>
         </div>
 
@@ -340,55 +355,33 @@
 
 
 <!--------------------------------------------------------------------->
-<!--- SCRIPTS --->
+    <!--- SCRIPTS --->
 
-<!-- PARALLAX EFFECT -->
-<script src="parallax/scripts/jquery.js"></script>
-<script src="parallax/deploy/jquery.parallax.js"></script>
-<script>
+    <!-- Foundation -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js"></script>
+    <script type="text/javascript" src="https://www.dropbox.com/s/rk51y5vdwzojo4j/app.js?raw=1"></script>
 
-// Yep, that's it!
-$('#scene').parallax();
+    <!-- Parallax -->
+    <script src="parallax/scripts/jquery.js"></script>
+    <script src="parallax/deploy/jquery.parallax.js"></script>
+    <script>
 
-</script>
+    // Yep, that's it!
+    $('#scene').parallax();
 
+    </script>
 
-<!-- the form -->
-<!--
-<script>
-Parse.initialize("IU7a7FRlt4XYkjop83ZeGjhGKw75WvTozxGQlALU", "A9l8Hay09r6OvWBh6GU4byFDzrGyNbX7ULAZBv1N");
+    <!--Vegas-->
+    <script src="https://www.dropbox.com/s/8nipopwg0t8gkox/vegas.min.js?raw=1"></script>
 
-var Post = Parse.Object.extend("FormPost");
-
-//USING JQUERY ON FORM WITH PARSE
-//listening for the submit action on the form
-$("#post-form").submit(function(event){
-  event.preventDefault();
-
-      var firstname = $("#first-name").val();
-      var lastname = $("#last-name").val();
-      var email = $("#email").val();
-      var message = $("#message").val();
-
-      var newPost = new Post();
-      newPost.set("firstname", firstname);
-      newPost.set("lastname", lastname);
-      newPost.set("email", email);
-      newPost.set("message", message);
-
-
-      newPost.save({
-          success: function(){
-              $("#post-form").find('input[type=text]').val('');
-              $("#post-form").find('textarea[type=text]').val('');
-          },
-          error: function(error){
-              console.log("Error:"+error.message);
-          }
-    });
-});
-</script>
--->
+<!--    <script src="https://www.dropbox.com/s/andmpkk60wovuup/vegas-scripts.js?raw=1"></script>-->
+    <script>
+    $("#bphoto").vegas({
+    slides: [
+        { src: "https://www.dropbox.com/s/m2mgr30nhw7fbfp/smile.jpg?raw=1" },
+    ],
+//    overlay: 'https://www.dropbox.com/s/gv9ji76k69d9v4v/06.png?raw=1'
+});</script>
 
 
 </body>
