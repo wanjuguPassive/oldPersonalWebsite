@@ -2,9 +2,13 @@
 
 .circle, .squircle {
   border-top: 0.1em solid rgba(255,255,255,0.4);
+  position: absolute;
+/*
   height: 12em;
   width: 12em;
-  position: absolute;
+*/
+  height: 17rem;
+  width: 17rem
 
 }
 
@@ -12,9 +16,9 @@
 .circle {
   border-radius: 50%;
   box-shadow: 0 1em 2em rgba(0,0,0,0.5);
-  left: calc(50% - 6.25em);
-  top: calc(50% - 14em);
-  transform-origin: 50% 14em;
+  left: calc(50% - 8.5rem);
+  top: calc(50% - 17rem);
+  transform-origin: 50% 17rem;
 }
 
 /*When you rotate an object in HTML using a transform, it rotates around a point called the transform-origin.
@@ -62,9 +66,9 @@ Let’s add the CSS to position each of these circles. */
 .small {
   width: 4em;
   height: 4em;
-  left: calc(50% - 2em);
-  top: calc(50% - 20em);
-  transform-origin: 50% 20em;
+  left: calc(50% - 2rem);
+  top: calc(50% - 25rem);
+  transform-origin: 50% 25rem;
   box-shadow: 0 0.25em 0.5em rgba(0,0,0,0.2);
 }
 
@@ -105,11 +109,11 @@ Let’s add the CSS to position each of these circles. */
 .large.squircle {
   background: rgba(30, 7, 66, 0.65);
   border: none;
-  height: 12em;
-  width: 12em;
-  left: calc(50% - 6em);
+  height: 16rem;
+  width: 16rem;
+  left: calc(50% - 8rem);
   position: absolute;
-  top: calc(50% - 6em);
+  top: calc(50% - 8rem);
   transform: none;
 
 }
@@ -131,7 +135,9 @@ Let’s add the CSS to position each of these circles. */
     font-size: 2em;
 }
 
-.small.squircle {}
+.small.squircle {
+    z-index: 15;
+}
 
 .small.squircle div {
 
@@ -149,7 +155,7 @@ Let’s add the CSS to position each of these circles. */
 }
 
 #SmallShapes{
-    z-index: 15;
+
 }
 
 #large_circles, #small_shapes, #content, #title {
